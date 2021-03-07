@@ -24,4 +24,10 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5150 4400
 	1    0    0    -1  
 $EndComp
+Text HLabel 950  2750 0    50   Input ~ 0
+SPI_MOSI
+Text HLabel 950  2900 0    50   Input ~ 0
+SPI_SCK
+Text HLabel 950  3050 0    50   Input ~ 0
+SPI_NSS
 $EndSCHEMATC
