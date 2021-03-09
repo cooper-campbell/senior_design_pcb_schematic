@@ -316,7 +316,7 @@ Text Label 8100 4750 0    50   ~ 0
 RA8875_MISO
 Text Label 8100 4950 0    50   ~ 0
 RA8875_NSS
-Text Label 8100 5100 0    50   ~ 0
+Text Label 8100 5050 0    50   ~ 0
 RA8875_NRST
 Text Label 8100 5200 0    50   ~ 0
 RA8875_WAIT
@@ -340,7 +340,6 @@ Wire Wire Line
 	8100 4850 7850 4850
 Wire Wire Line
 	8100 4950 7850 4950
-NoConn ~ 8100 5100
 NoConn ~ 8100 5200
 NoConn ~ 8100 5300
 Wire Notes Line
@@ -353,7 +352,7 @@ Text Notes 7250 4450 1    50   ~ 0
 Known No-Connects
 Text Notes 7300 4900 1    50   ~ 0
 Signals
-Text Notes 8050 5200 2    50   Italic 0
+Text Notes 8050 5300 2    50   Italic 0
 May connect later
 Text Notes 6900 2850 0    50   ~ 0
 RA8875 Connector
@@ -367,32 +366,36 @@ Text Label 2700 2350 2    50   ~ 0
 BOOT0
 Wire Wire Line
 	2700 2350 2850 2350
-Text Label 5500 1200 1    50   ~ 0
+Text Label 6050 1500 1    50   ~ 0
 BOOT0
 $Comp
 L Device:R_Small R?
 U 1 1 605179A2
-P 5500 1400
-F 0 "R?" H 5559 1446 50  0000 L CNN
-F 1 "10k" H 5559 1355 50  0000 L CNN
-F 2 "" H 5500 1400 50  0001 C CNN
-F 3 "~" H 5500 1400 50  0001 C CNN
-	1    5500 1400
+P 6050 1700
+F 0 "R?" H 6109 1746 50  0000 L CNN
+F 1 "10k" H 6109 1655 50  0000 L CNN
+F 2 "" H 6050 1700 50  0001 C CNN
+F 3 "~" H 6050 1700 50  0001 C CNN
+	1    6050 1700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 605180FB
-P 5500 1650
-F 0 "#PWR?" H 5500 1400 50  0001 C CNN
-F 1 "GND" H 5505 1477 50  0000 C CNN
-F 2 "" H 5500 1650 50  0001 C CNN
-F 3 "" H 5500 1650 50  0001 C CNN
-	1    5500 1650
+P 6050 1950
+F 0 "#PWR?" H 6050 1700 50  0001 C CNN
+F 1 "GND" H 6055 1777 50  0000 C CNN
+F 2 "" H 6050 1950 50  0001 C CNN
+F 3 "" H 6050 1950 50  0001 C CNN
+	1    6050 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5500 1200 5500 1300
+	6050 1500 6050 1600
 Wire Wire Line
-	5500 1500 5500 1650
+	6050 1800 6050 1950
+Text Label 7850 5050 2    50   ~ 0
+SCREEN_NRST
+Wire Wire Line
+	8100 5050 7850 5050
 $EndSCHEMATC
