@@ -352,8 +352,6 @@ Text Notes 7250 4450 1    50   ~ 0
 Known No-Connects
 Text Notes 7300 4900 1    50   ~ 0
 Signals
-Text Notes 8050 5300 2    50   Italic 0
-May connect later
 Text Notes 6900 2850 0    50   ~ 0
 RA8875 Connector
 Wire Notes Line
@@ -366,34 +364,34 @@ Text Label 2700 2350 2    50   ~ 0
 BOOT0
 Wire Wire Line
 	2700 2350 2850 2350
-Text Label 6050 1500 1    50   ~ 0
+Text Label 5750 1400 1    50   ~ 0
 BOOT0
 $Comp
 L Device:R_Small R?
 U 1 1 605179A2
-P 6050 1700
-F 0 "R?" H 6109 1746 50  0000 L CNN
-F 1 "10k" H 6109 1655 50  0000 L CNN
-F 2 "" H 6050 1700 50  0001 C CNN
-F 3 "~" H 6050 1700 50  0001 C CNN
-	1    6050 1700
+P 5750 1600
+F 0 "R?" H 5809 1646 50  0000 L CNN
+F 1 "10k" H 5809 1555 50  0000 L CNN
+F 2 "" H 5750 1600 50  0001 C CNN
+F 3 "~" H 5750 1600 50  0001 C CNN
+	1    5750 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 605180FB
-P 6050 1950
-F 0 "#PWR?" H 6050 1700 50  0001 C CNN
-F 1 "GND" H 6055 1777 50  0000 C CNN
-F 2 "" H 6050 1950 50  0001 C CNN
-F 3 "" H 6050 1950 50  0001 C CNN
-	1    6050 1950
+P 5750 1850
+F 0 "#PWR?" H 5750 1600 50  0001 C CNN
+F 1 "GND" H 5755 1677 50  0000 C CNN
+F 2 "" H 5750 1850 50  0001 C CNN
+F 3 "" H 5750 1850 50  0001 C CNN
+	1    5750 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6050 1500 6050 1600
+	5750 1400 5750 1500
 Wire Wire Line
-	6050 1800 6050 1950
+	5750 1700 5750 1850
 Text Label 7850 5050 2    50   ~ 0
 SCREEN_NRST
 Wire Wire Line
