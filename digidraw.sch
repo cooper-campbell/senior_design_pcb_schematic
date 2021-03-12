@@ -324,4 +324,100 @@ Wire Notes Line
 	3750 3650 7600 3650
 Wire Notes Line
 	3750 2300 7600 2300
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 604BB9D1
+P 8750 1200
+F 0 "H?" H 8850 1249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8850 1158 50  0000 L CNN
+F 2 "" H 8750 1200 50  0001 C CNN
+F 3 "~" H 8750 1200 50  0001 C CNN
+	1    8750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604BC603
+P 8750 1350
+F 0 "#PWR?" H 8750 1100 50  0001 C CNN
+F 1 "GND" H 8755 1177 50  0000 C CNN
+F 2 "" H 8750 1350 50  0001 C CNN
+F 3 "" H 8750 1350 50  0001 C CNN
+	1    8750 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1350 8750 1300
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 604BDAEB
+P 8750 1750
+F 0 "H?" H 8850 1799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8850 1708 50  0000 L CNN
+F 2 "" H 8750 1750 50  0001 C CNN
+F 3 "~" H 8750 1750 50  0001 C CNN
+	1    8750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604BDB89
+P 8750 1900
+F 0 "#PWR?" H 8750 1650 50  0001 C CNN
+F 1 "GND" H 8755 1727 50  0000 C CNN
+F 2 "" H 8750 1900 50  0001 C CNN
+F 3 "" H 8750 1900 50  0001 C CNN
+	1    8750 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1900 8750 1850
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 604C1699
+P 8750 2300
+F 0 "H?" H 8850 2349 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8850 2258 50  0000 L CNN
+F 2 "" H 8750 2300 50  0001 C CNN
+F 3 "~" H 8750 2300 50  0001 C CNN
+	1    8750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604C169F
+P 8750 2450
+F 0 "#PWR?" H 8750 2200 50  0001 C CNN
+F 1 "GND" H 8755 2277 50  0000 C CNN
+F 2 "" H 8750 2450 50  0001 C CNN
+F 3 "" H 8750 2450 50  0001 C CNN
+	1    8750 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 2450 8750 2400
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 604C2385
+P 8750 2900
+F 0 "H?" H 8850 2949 50  0000 L CNN
+F 1 "MountingHole_Pad" H 8850 2858 50  0000 L CNN
+F 2 "" H 8750 2900 50  0001 C CNN
+F 3 "~" H 8750 2900 50  0001 C CNN
+	1    8750 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604C238B
+P 8750 3050
+F 0 "#PWR?" H 8750 2800 50  0001 C CNN
+F 1 "GND" H 8755 2877 50  0000 C CNN
+F 2 "" H 8750 3050 50  0001 C CNN
+F 3 "" H 8750 3050 50  0001 C CNN
+	1    8750 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 3050 8750 3000
 $EndSCHEMATC
