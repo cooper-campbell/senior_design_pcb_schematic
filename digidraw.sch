@@ -256,12 +256,6 @@ Text Notes 3750 2300 0    50   ~ 0
 Power Converter
 Wire Notes Line
 	3750 2300 3750 3650
-Wire Notes Line
-	3750 3650 7000 3650
-Wire Notes Line
-	7000 3650 7000 2300
-Wire Notes Line
-	7000 2300 3750 2300
 Wire Wire Line
 	4800 4450 5600 4450
 Wire Wire Line
@@ -274,4 +268,60 @@ Wire Wire Line
 	6000 3150 6000 3400
 Text Notes 9850 7870 0    50   ~ 0
 Version 1.0.0
+$Comp
+L Device:LED D?
+U 1 1 604BBE37
+P 7150 3100
+F 0 "D?" V 7189 2982 50  0000 R CNN
+F 1 "RED_LED" V 7098 2982 50  0000 R CNN
+F 2 "" H 7150 3100 50  0001 C CNN
+F 3 "~" H 7150 3100 50  0001 C CNN
+	1    7150 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 604BCA6D
+P 7150 2800
+F 0 "R?" H 7209 2846 50  0000 L CNN
+F 1 "50" H 7209 2755 50  0000 L CNN
+F 2 "" H 7150 2800 50  0001 C CNN
+F 3 "~" H 7150 2800 50  0001 C CNN
+	1    7150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2900 7150 2950
+$Comp
+L power:GND #PWR?
+U 1 1 604BE106
+P 7150 3300
+F 0 "#PWR?" H 7150 3050 50  0001 C CNN
+F 1 "GND" H 7155 3127 50  0000 C CNN
+F 2 "" H 7150 3300 50  0001 C CNN
+F 3 "" H 7150 3300 50  0001 C CNN
+	1    7150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 3300 7150 3250
+$Comp
+L power:+3.3V #PWR?
+U 1 1 604BEBCA
+P 7150 2650
+F 0 "#PWR?" H 7150 2500 50  0001 C CNN
+F 1 "+3.3V" H 7165 2823 50  0000 C CNN
+F 2 "" H 7150 2650 50  0001 C CNN
+F 3 "" H 7150 2650 50  0001 C CNN
+	1    7150 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2650 7150 2700
+Wire Notes Line
+	7600 2300 7600 3650
+Wire Notes Line
+	3750 3650 7600 3650
+Wire Notes Line
+	3750 2300 7600 2300
 $EndSCHEMATC

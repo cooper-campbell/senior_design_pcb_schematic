@@ -1182,15 +1182,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 1150 6500 1150
 Wire Notes Line
-	6000 750  6800 750 
-Wire Notes Line
 	6800 750  6800 1600
-Wire Notes Line
-	6800 1600 6000 1600
-Wire Notes Line
-	6000 750  6000 1600
-Text Notes 6000 750  0    50   ~ 0
-UART Debug Output\n
 Text Label 3400 2450 0    50   ~ 0
 USB_FS_DP
 Wire Wire Line
@@ -1635,7 +1627,7 @@ Wire Notes Line
 Wire Notes Line
 	4900 2100 4900 4750
 Text Notes 4900 2100 0    50   ~ 0
-Output Connectors/Debug\n
+Output Connectors\n
 NoConn ~ 3250 1450
 NoConn ~ 3250 1550
 NoConn ~ 3250 1850
@@ -1695,19 +1687,19 @@ NoConn ~ 1450 3250
 NoConn ~ 1450 3150
 NoConn ~ 1450 3050
 NoConn ~ 1450 2950
-Text Label 2000 7650 2    50   ~ 0
+Text Label 2100 7550 2    50   ~ 0
 GPIO_OUTPUT_D15
-Text Label 2000 7550 2    50   ~ 0
+Text Label 2100 7450 2    50   ~ 0
 GPIO_OUTPUT_D14
-Text Label 2000 7450 2    50   ~ 0
+Text Label 2100 7350 2    50   ~ 0
 GPIO_OUTPUT_D13
-Text Label 2000 7350 2    50   ~ 0
+Text Label 2100 7250 2    50   ~ 0
 GPIO_OUTPUT_D12
-NoConn ~ 2000 7350
-NoConn ~ 2000 7450
-NoConn ~ 2000 7550
-NoConn ~ 2000 7650
-Text Notes 1000 7250 0    50   ~ 0
+NoConn ~ 2100 7250
+NoConn ~ 2100 7350
+NoConn ~ 2100 7450
+NoConn ~ 2100 7550
+Text Notes 1100 7150 0    50   ~ 0
 No idea, but these are set in our project.\nNeed to look into why these are configured.\n
 $Comp
 L power:+3.3V #PWR?
@@ -1758,4 +1750,46 @@ Wire Wire Line
 	950  1750 1450 1750
 Text Notes 7350 7500 0    50   ~ 0
 USB and DAC subsystem\n
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 604E0612
+P 5850 1150
+F 0 "J?" H 6100 950 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 6200 1450 50  0000 R CNN
+F 2 "" H 5850 1150 50  0001 C CNN
+F 3 "~" H 5850 1150 50  0001 C CNN
+	1    5850 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 604E24D2
+P 5500 1300
+F 0 "#PWR?" H 5500 1050 50  0001 C CNN
+F 1 "GND" H 5400 1200 50  0000 C CNN
+F 2 "" H 5500 1300 50  0001 C CNN
+F 3 "" H 5500 1300 50  0001 C CNN
+	1    5500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 1300 5500 1250
+Wire Wire Line
+	5500 1250 5650 1250
+Text Label 5500 1050 2    50   ~ 0
+ANALOG_L
+Text Label 5500 1150 2    50   ~ 0
+ANALOG_R
+Wire Wire Line
+	5500 1050 5650 1050
+Wire Wire Line
+	5500 1150 5650 1150
+Wire Notes Line
+	5100 1600 5100 750 
+Wire Notes Line
+	5100 750  6800 750 
+Wire Notes Line
+	5100 1600 6800 1600
+Text Notes 5100 750  0    50   ~ 0
+Debug Connections
 $EndSCHEMATC
