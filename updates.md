@@ -31,13 +31,12 @@ F4:
 	- Not sure how to do this, I thought that is what the current limiter switch is for?
 - [ ] Pull-up (maybe to 5V???) for the EN of the power switch.
 	- I have a pullup to 3.3v, as per the above document. I upped the resistor to 10k though.
-- [ ] Series termination resistors going to the I2S peripheral should be close to the signal source, so close to the MCU.
+- [x] Series termination resistors going to the I2S peripheral should be close to the signal source, so close to the MCU.
 - [x] Also suggest getting rid of "DGND" net name. Just connect it directly to GND.
 - [x] Add some debug testpoint headers (100mil pitch)  for signals like the audio output, I2S.
 - [x] I would tend to use a 2nd LDO for the DAC... might not be necessary, but it can't hurt to add.
 - [x] Add ability for MCU to control the DAC soft-mute. Suggest using pull-up or pull-down for other control pins, so we can easily reconfigure them.
-- [ ] I think the series resistor on the DAC output is on the wrong side of the caps.
-	- I do not think so
+- [x] I think the series resistor on the DAC output is on the wrong side of the caps.
 - [ ] Pros/cons of using an external SCK vs the internal PLL?
 	- This is a conversation for OD, but it is currently working so I am not sure if we need to change it.
 - [x] Change page sizes to letter (and not A4)
