@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name TI_REGULATOR)(type Legacy)(uri ${KIPRJMOD}/ti/eec.lib)(options "")(descr ""))
+  (lib (name DIGIKEY_POWER)(type Legacy)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-symbols/dk_PMIC-Power-Distribution-Switches-Load-Drivers.lib)(options "")(descr ""))
+  (lib (name DIGIKEY_AUDIO)(type Legacy)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-symbols/dk_Barrel-Audio-Connectors.lib)(options "")(descr ""))
+)

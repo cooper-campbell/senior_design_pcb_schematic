@@ -427,6 +427,51 @@ X 4 4 100 0 50 L 30 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_D_TVS
+#
+DEF Device_D_TVS D 0 40 N N 1 F N
+F0 "D" 0 100 50 H V C CNN
+F1 "Device_D_TVS" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 50 0 -50 0 N
+P 4 0 1 8 -100 -50 0 0 -100 50 -100 -50 N
+P 4 0 1 8 20 50 0 50 0 -50 -20 -50 N
+P 4 0 1 8 100 50 100 -50 0 0 100 50 N
+X A1 1 -150 0 100 R 50 50 1 1 P
+X A2 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Zener_Small
+#
+DEF Device_D_Zener_Small D 0 10 N N 1 F N
+F0 "D" 0 90 50 H V C CNN
+F1 "Device_D_Zener_Small" 0 -90 50 H V C CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 30 0 -30 0 N
+P 3 0 1 0 -10 40 -30 40 -30 -40 N
+P 4 0 1 0 30 40 -30 0 30 -40 30 40 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_Fuse_Small
 #
 DEF Device_Fuse_Small F 0 10 N N 1 F N
@@ -465,6 +510,29 @@ P 5 0 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
 P 5 0 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_L_Small
+#
+DEF Device_L_Small L 0 10 N N 1 F N
+F0 "L" 30 40 50 H V L CNN
+F1 "Device_L_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
+A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
+A 0 20 20 -899 899 0 1 0 N 0 0 0 40
+A 0 60 20 -899 899 0 1 0 N 0 40 0 80
+X ~ 1 0 100 20 D 50 50 1 1 P
+X ~ 2 0 -100 20 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -773,6 +841,24 @@ X IO1 6 -500 100 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Regulator_Linear_LM117_TO3
+#
+DEF Regulator_Linear_LM117_TO3 U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "Regulator_Linear_LM117_TO3" 0 125 50 H V L CNN
+F2 "Package_TO_SOT_THT:TO-3" 0 200 50 H I C CIN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TO?3*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X ADJ 1 0 -300 100 U 50 50 1 1 I
+X VI 2 -300 0 100 R 50 50 1 1 W
+X VO 3 300 0 100 L 50 50 1 1 w
+ENDDRAW
+ENDDEF
+#
 # Regulator_Linear_LM317_TO3
 #
 DEF Regulator_Linear_LM317_TO3 U 0 10 Y Y 1 F N
@@ -816,6 +902,59 @@ X 1 1 -200 0 100 R 50 50 0 1 P
 X 2 2 200 0 100 L 50 50 0 1 P
 X 3 3 -200 -200 100 R 50 50 0 1 P
 X 4 4 200 -200 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# TI_REGULATOR_TPS63070RNMR
+#
+DEF TI_REGULATOR_TPS63070RNMR U 0 40 Y Y 1 L N
+F0 "U" 0 200 50 H V L CNN
+F1 "TI_REGULATOR_TPS63070RNMR" 0 300 50 H V L CNN
+F2 "Texas_Instruments-RNM0015A-0-0-*" 0 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/tps63070.pdf" 0 500 50 H I L CNN
+F4 "No" 0 600 50 H I L CNN "automotive"
+F5 "IC" 0 700 50 H I L CNN "category"
+F6 "Integrated Circuits (ICs)" 0 800 50 H I L CNN "device class L1"
+F7 "Power Management ICs" 0 900 50 H I L CNN "device class L2"
+F8 "Voltage Regulators - Switching" 0 1000 50 H I L CNN "device class L3"
+F9 "IC REG BCK BST ADJ 3.6A 15VQFN" 0 1100 50 H I L CNN "digikey description"
+F10 "296-44874-1-ND" 0 1200 50 H I L CNN "digikey part number"
+F11 "1mm" 0 1300 50 H I L CNN "height"
+F12 "Yes" 0 1400 50 H I L CNN "lead free"
+F13 "8e133e443d7c1ba5" 0 1500 50 H I L CNN "library id"
+F14 "Texas Instruments" 0 1600 50 H I L CNN "manufacturer"
+F15 "100%" 0 1700 50 H I L CNN "max duty cycle"
+F16 "+125°C" 0 1800 50 H I L CNN "max junction temp"
+F17 "16V" 0 1900 50 H I L CNN "max supply voltage"
+F18 "2V" 0 2000 50 H I L CNN "min supply voltage"
+F19 "595-TPS63070RNMR" 0 2100 50 H I L CNN "mouser part number"
+F20 "5-54uA" 0 2200 50 H I L CNN "nominal supply current"
+F21 "1" 0 2300 50 H I L CNN "number of outputs"
+F22 "3.6A" 0 2400 50 H I L CNN "output current"
+F23 "AdjustableProgrammable" 0 2500 50 H I L CNN "output type"
+F24 "2.5-9V" 0 2600 50 H I L CNN "output voltage"
+F25 "VQFN-HR15" 0 2700 50 H I L CNN "package"
+F26 "Yes" 0 2800 50 H I L CNN "rohs"
+F27 "0mm" 0 2900 50 H I L CNN "standoff height"
+F28 "2.4MHz" 0 3000 50 H I L CNN "switching frequency"
+F29 "Buck-Boost" 0 3100 50 H I L CNN "switching topology"
+F30 "+125°C" 0 3200 50 H I L CNN "temperature range high"
+F31 "-40°C" 0 3300 50 H I L CNN "temperature range low"
+DRAW
+S 200 100 1100 -1100 1 1 0 f
+X PS/S 1 100 -1000 100 R 40 40 1 1 I
+X PGND 10 1200 -1000 100 L 40 40 1 1 W
+X L1 11 100 -400 100 R 40 40 1 1 I
+X VIN 12-13 100 0 100 R 40 40 1 1 W
+X EN 14 100 -900 100 R 40 40 1 1 I
+X VSEL 15 100 -700 100 R 40 40 1 1 I
+X PG 2 1200 -500 100 L 40 40 1 1 C
+X VAUX 3 100 -200 100 R 40 40 1 1 O
+X GND 4 1200 -900 100 L 40 40 1 1 W
+X FB 5 1200 -200 100 L 40 40 1 1 O
+X FB2 6 1200 -300 100 L 40 40 1 1 O
+X VOUT 7-8 1200 0 100 L 40 40 1 1 O
+X L2 9 100 -500 100 R 40 40 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -864,6 +1003,20 @@ X +3.3VADC 1 0 0 0 U 50 50 0 0 W N
 ENDDRAW
 ENDDEF
 #
+# power_+3.3VDAC
+#
+DEF power_+3.3VDAC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 150 -50 50 H I C CNN
+F1 "power_+3.3VDAC" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 3 0 1 0 0 0 0 40 0 40 N
+P 6 0 1 0 0 40 20 20 0 70 -20 20 0 40 0 40 N
+X +3.3VDAC 1 0 0 0 U 50 50 0 0 W N
+ENDDRAW
+ENDDEF
+#
 # power_+5V
 #
 DEF power_+5V #PWR 0 0 Y Y 1 F P
@@ -889,6 +1042,27 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# pspice_MPMOS
+#
+DEF pspice_MPMOS M 0 0 Y Y 1 F N
+F0 "M" 300 50 50 H V L CNN
+F1 "pspice_MPMOS" 300 -50 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -50 100 -50 -100 N
+P 2 0 1 0 -25 -100 100 -100 N
+P 2 0 1 0 100 100 -25 100 N
+P 2 0 1 0 200 0 -25 0 N
+P 4 0 1 0 200 0 125 25 125 -25 200 0 F
+P 2 1 1 0 -25 -100 -25 100 N
+X D 1 100 -200 100 U 50 50 1 1 P
+X G 2 -200 0 150 R 50 50 1 1 I
+X S 3 100 200 100 D 50 50 1 1 P
+X B 4 200 200 200 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

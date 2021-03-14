@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TPS63070RNMR
+D TPS63070RNMR
+F http://www.ti.com/lit/ds/symlink/tps63070.pdf
+$ENDCMP
+# end doc library
