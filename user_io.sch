@@ -590,12 +590,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR053
 U 1 1 6055EB95
-P 9900 4600
-F 0 "#PWR053" H 9900 4450 50  0001 C CNN
-F 1 "+3.3V" H 9915 4773 50  0000 C CNN
-F 2 "" H 9900 4600 50  0001 C CNN
-F 3 "" H 9900 4600 50  0001 C CNN
-	1    9900 4600
+P 9900 4400
+F 0 "#PWR053" H 9900 4250 50  0001 C CNN
+F 1 "+3.3V" H 9915 4573 50  0000 C CNN
+F 2 "" H 9900 4400 50  0001 C CNN
+F 3 "" H 9900 4400 50  0001 C CNN
+	1    9900 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -612,12 +612,10 @@ $EndComp
 Wire Wire Line
 	9900 4950 9950 4950
 Wire Wire Line
-	9900 4600 9900 4650
-Wire Wire Line
 	9900 4650 9950 4650
-Text Label 9700 4850 2    50   ~ 0
+Text Label 9600 4750 2    50   ~ 0
 USART_RX
-Text Label 9700 4750 2    50   ~ 0
+Text Label 9600 4850 2    50   ~ 0
 USART_TX
 Wire Notes Line
 	5400 2150 6500 2150
@@ -1226,30 +1224,14 @@ Wire Wire Line
 $Comp
 L Device:R_Small R22
 U 1 1 60A388CB
-P 9750 5000
-F 0 "R22" H 9880 4960 50  0000 R CNN
-F 1 "10k" H 9920 5030 50  0000 R CNN
-F 2 "" H 9750 5000 50  0001 C CNN
-F 3 "~" H 9750 5000 50  0001 C CNN
-	1    9750 5000
-	-1   0    0    1   
+P 9750 4600
+F 0 "R22" H 9718 4640 50  0000 R CNN
+F 1 "10k" H 9714 4570 50  0000 R CNN
+F 2 "" H 9750 4600 50  0001 C CNN
+F 3 "~" H 9750 4600 50  0001 C CNN
+	1    9750 4600
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9750 5100 9900 5100
-Wire Wire Line
-	9900 5100 9900 5150
-Wire Wire Line
-	9750 4900 9750 4850
-Wire Wire Line
-	9750 4850 9950 4850
-Wire Wire Line
-	9700 4850 9750 4850
-Connection ~ 9750 4850
-Wire Wire Line
-	9900 4950 9900 5100
-Connection ~ 9900 5100
-Wire Wire Line
-	9700 4750 9950 4750
 Wire Notes Line
 	10350 4150 10350 5300
 Wire Notes Line
@@ -1531,4 +1513,24 @@ Wire Notes Line
 	5400 700  5400 1950
 Text Notes 5400 700  0    50   ~ 0
 User Pushbutton\n
+Wire Wire Line
+	9900 4950 9900 5150
+Wire Wire Line
+	9600 4750 9750 4750
+Wire Wire Line
+	9600 4850 9950 4850
+Wire Wire Line
+	9750 4700 9750 4750
+Connection ~ 9750 4750
+Wire Wire Line
+	9750 4750 9950 4750
+Wire Wire Line
+	9750 4500 9750 4450
+Wire Wire Line
+	9750 4450 9900 4450
+Wire Wire Line
+	9900 4450 9900 4400
+Wire Wire Line
+	9900 4450 9900 4650
+Connection ~ 9900 4450
 $EndSCHEMATC
