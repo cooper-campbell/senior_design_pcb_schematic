@@ -333,59 +333,6 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# DIGIKEY_AUDIO_JACK_SN49B12B
-#
-DEF DIGIKEY_AUDIO_JACK_SN49B12B CON 0 40 Y Y 1 F N
-F0 "CON" -300 250 60 H V L CNN
-F1 "DIGIKEY_AUDIO_JACK_SN49B12B" -300 -250 60 H V L CNN
-F2 "digikey-footprints:Headphone_Jack_6.35mm_SN49B12B" 200 200 60 H I L CNN
-F3 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" 200 300 60 H I L CNN
-F4 "SC1522-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "SN49B12B" 200 500 60 H I L CNN "MPN"
-F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
-F7 "Barrel - Audio Connectors" 200 700 60 H I L CNN "Family"
-F8 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/switchcraft-inc/SN49B12B/SC1522-ND/412780" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "CONN JACK STEREO 6.35MM R/A" 200 1000 60 H I L CNN "Description"
-F11 "Switchcraft Inc." 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S 200 200 -300 -200 0 1 0 f
-P 4 0 1 0 200 0 100 0 50 -50 0 0 N
-P 4 0 1 0 200 100 0 100 -50 50 -100 100 N
-P 6 0 1 0 200 -100 -150 -100 -150 100 -200 100 -200 -50 -150 -50 N
-X ~ R 400 100 200 L 50 50 1 1 P
-X ~ S 400 -100 200 L 50 50 1 1 P
-X ~ T 400 0 200 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# DIGIKEY_POWER_SWITCH_STMPS2141STR
-#
-DEF DIGIKEY_POWER_SWITCH_STMPS2141STR U 0 40 Y Y 1 F N
-F0 "U" -300 200 60 H V C CNN
-F1 "DIGIKEY_POWER_SWITCH_STMPS2141STR" 0 -300 60 H V L CNN
-F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
-F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/e8/d7/48/25/eb/87/45/b3/CD00167470.pdf/files/CD00167470.pdf/jcr:content/translations/en.CD00167470.pdf" 200 300 60 H I L CNN
-F4 "497-6933-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
-F5 "STMPS2141STR" 200 500 60 H I L CNN "MPN"
-F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
-F7 "PMIC - Power Distribution Switches, Load Drivers" 200 700 60 H I L CNN "Family"
-F8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/e8/d7/48/25/eb/87/45/b3/CD00167470.pdf/files/CD00167470.pdf/jcr:content/translations/en.CD00167470.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
-F9 "/product-detail/en/stmicroelectronics/STMPS2141STR/497-6933-1-ND/1880311" 200 900 60 H I L CNN "DK_Detail_Page"
-F10 "IC PWR SWITCH 1CH 500MA SOT23-5" 200 1000 60 H I L CNN "Description"
-F11 "STMicroelectronics" 200 1100 60 H I L CNN "Manufacturer"
-F12 "Active" 200 1200 60 H I L CNN "Status"
-DRAW
-S -300 100 200 -200 0 1 0 f
-X OUT 1 300 0 100 L 50 50 1 1 O
-X GND 2 -100 -300 100 U 50 50 1 1 W
-X FAULT 3 300 -100 100 L 50 50 1 1 O
-X EN 4 -400 0 100 R 50 50 1 1 I
-X IN 5 -100 200 100 D 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
 # Device_C_Small
 #
 DEF Device_C_Small C 0 10 N N 1 F N
@@ -404,11 +351,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Crystal_GND23_Small
+# Device_Crystal_GND24_Small
 #
-DEF Device_Crystal_GND23_Small Y 0 40 Y N 1 F N
+DEF Device_Crystal_GND24_Small Y 0 40 Y N 1 F N
 F0 "Y" 50 175 50 H V L CNN
-F1 "Device_Crystal_GND23_Small" 50 100 50 H V L CNN
+F1 "Device_Crystal_GND24_Small" 50 100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -422,31 +369,8 @@ P 4 0 1 0 -50 -50 -50 -75 50 -75 50 -50 N
 P 4 0 1 0 -50 50 -50 75 50 75 50 50 N
 X 1 1 -100 0 50 R 30 50 1 1 P
 X 2 2 0 -100 25 U 30 50 1 1 P
-X 3 3 0 100 25 D 30 50 1 1 P
-X 4 4 100 0 50 L 30 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device_D_TVS
-#
-DEF Device_D_TVS D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "Device_D_TVS" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 -100 -50 0 0 -100 50 -100 -50 N
-P 4 0 1 8 20 50 0 50 0 -50 -20 -50 N
-P 4 0 1 8 100 50 100 -50 0 0 100 50 N
-X A1 1 -150 0 100 R 50 50 1 1 P
-X A2 2 150 0 100 L 50 50 1 1 P
+X 3 3 100 0 50 L 30 50 1 1 P
+X 4 4 0 100 25 D 30 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -550,6 +474,75 @@ DRAW
 S -30 70 30 -70 0 1 8 N
 X ~ 1 0 100 30 D 50 50 1 1 P
 X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# FDD5614P_FDD5614P
+#
+DEF FDD5614P_FDD5614P Q 0 40 Y Y 1 L N
+F0 "Q" 0 300 50 H V L CNN
+F1 "FDD5614P_FDD5614P" 0 400 50 H V L CNN
+F2 "ON_Semi-369AS-09_2016-O-*" 0 500 50 H I L CNN
+F3 "http://www.onsemi.com/pub/Collateral/FDD5614P-D.PDF" 0 600 50 H I L CNN
+F4 "Trans" 0 700 50 H I L CNN "category"
+F5 "-15A" 0 800 50 H I L CNN "continuous drain current"
+F6 "Discrete Semiconductors" 0 900 50 H I L CNN "device class L1"
+F7 "Transistors" 0 1000 50 H I L CNN "device class L2"
+F8 "MOSFETs" 0 1100 50 H I L CNN "device class L3"
+F9 "MOSFET P-CH 60V 15A DPAK" 0 1200 50 H I L CNN "digikey description"
+F10 "FDD5614PCT-ND" 0 1300 50 H I L CNN "digikey part number"
+F11 "-60V" 0 1400 50 H I L CNN "drain to source breakdown voltage"
+F12 "76mΩ" 0 1500 50 H I L CNN "drain to source resistance"
+F13 "-60V" 0 1600 50 H I L CNN "drain to source voltage"
+F14 "http://www.onsemi.com/pub/Collateral/369AS.PDF" 0 1700 50 H I L CNN "footprint url"
+F15 "20V" 0 1800 50 H I L CNN "gate to source voltage"
+F16 "2.39mm" 0 1900 50 H I L CNN "height"
+F17 "759pF @ -30V" 0 2000 50 H I L CNN "input capacitace at vds"
+F18 "yes" 0 2100 50 H I L CNN "lead free"
+F19 "36114b9e5fc3cb00" 0 2200 50 H I L CNN "library id"
+F20 "ON Semi" 0 2300 50 H I L CNN "manufacturer"
+F21 "+175°C" 0 2400 50 H I L CNN "max junction temp"
+F22 "512-FDD5614P" 0 2500 50 H I L CNN "mouser part number"
+F23 "1" 0 2600 50 H I L CNN "number of P channels"
+F24 "1" 0 2700 50 H I L CNN "number of channels"
+F25 "DPAK3" 0 2800 50 H I L CNN "package"
+F26 "42W" 0 2900 50 H I L CNN "power dissipation"
+F27 "yes" 0 3000 50 H I L CNN "rohs"
+F28 "MOSFET" 0 3100 50 H I L CNN "technology"
+F29 "+175°C" 0 3200 50 H I L CNN "temperature range high"
+F30 "-55°C" 0 3300 50 H I L CNN "temperature range low"
+F31 "-1.6V" 0 3400 50 H I L CNN "threshold vgs"
+F32 "19ns" 0 3500 50 H I L CNN "turn off delay time"
+F33 "7ns" 0 3600 50 H I L CNN "turn on delay time"
+DRAW
+C 400 -80 10 1 1 0 N
+C 400 80 10 1 1 0 N
+P 2 1 1 0 240 -100 240 100 N
+P 2 1 1 0 270 -80 400 -80 N
+P 2 1 1 0 270 -60 270 -100 N
+P 2 1 1 0 270 20 270 -20 N
+P 2 1 1 0 270 60 270 100 N
+P 2 1 1 0 270 80 400 80 N
+P 2 1 1 0 290 0 340 -30 N
+P 2 1 1 0 290 0 340 30 N
+P 2 1 1 0 300 0 400 0 N
+P 2 1 1 0 330 10 330 -20 N
+P 2 1 1 0 340 30 340 -30 N
+P 2 1 1 0 400 -80 470 -80 N
+P 2 1 1 0 470 80 400 80 N
+P 2 1 1 0 470 80 530 80 N
+P 2 1 1 0 510 -20 500 -30 N
+P 2 1 1 0 510 20 530 -20 N
+P 2 1 1 0 530 -80 470 -80 N
+P 2 1 1 0 530 -20 510 -20 N
+P 2 1 1 0 530 -20 550 -20 N
+P 2 1 1 0 530 -20 550 20 N
+P 2 1 1 0 530 80 530 -80 N
+P 2 1 1 0 550 -20 560 -10 N
+P 2 1 1 0 550 20 510 20 N
+X G 1 100 0 140 R 40 0 1 1 P
+X S 3 400 -200 200 U 40 0 1 1 P
+X D 4 400 200 120 D 40 0 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -848,24 +841,6 @@ F0 "U" -150 125 50 H V C CNN
 F1 "Regulator_Linear_LM117_TO3" 0 125 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-3" 0 200 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO?3*
-$ENDFPLIST
-DRAW
-S -200 75 200 -200 0 1 10 f
-X ADJ 1 0 -300 100 U 50 50 1 1 I
-X VI 2 -300 0 100 R 50 50 1 1 W
-X VO 3 300 0 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# Regulator_Linear_LM317_TO3
-#
-DEF Regulator_Linear_LM317_TO3 U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear_LM317_TO3" 0 125 50 H V L CNN
-F2 "Package_TO_SOT_THT:TO-3" 0 200 50 H I C CIN
-F3 "" 0 0 50 H I C CNN
 ALIAS LM117_TO3 LM350_TO3 LM150_TO3
 $FPLIST
  TO?3*
@@ -958,6 +933,85 @@ X L2 9 100 -500 100 R 40 40 1 1 I
 ENDDRAW
 ENDDEF
 #
+# digidraw-rescue_SN49B12B-DIGIKEY_AUDIO_JACK
+#
+DEF digidraw-rescue_SN49B12B-DIGIKEY_AUDIO_JACK CON 0 40 Y Y 1 F N
+F0 "CON" -300 250 60 H V L CNN
+F1 "digidraw-rescue_SN49B12B-DIGIKEY_AUDIO_JACK" -300 -250 60 H V L CNN
+F2 "digikey-footprints:Headphone_Jack_6.35mm_SN49B12B" 200 200 60 H I L CNN
+F3 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" 200 300 60 H I L CNN
+F4 "SC1522-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "SN49B12B" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Barrel - Audio Connectors" 200 700 60 H I L CNN "Family"
+F8 "http://www.switchcraft.com/Drawings/SN49B_SERIES_CD.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/switchcraft-inc/SN49B12B/SC1522-ND/412780" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN JACK STEREO 6.35MM R/A" 200 1000 60 H I L CNN "Description"
+F11 "Switchcraft Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S 200 200 -300 -200 0 1 0 f
+P 4 0 1 0 200 0 100 0 50 -50 0 0 N
+P 4 0 1 0 200 100 0 100 -50 50 -100 100 N
+P 6 0 1 0 200 -100 -150 -100 -150 100 -200 100 -200 -50 -150 -50 N
+X ~ R 400 100 200 L 50 50 1 1 P
+X ~ S 400 -100 200 L 50 50 1 1 P
+X ~ T 400 0 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# digidraw-rescue_STMPS2141STR-DIGIKEY_POWER_SWITCH
+#
+DEF digidraw-rescue_STMPS2141STR-DIGIKEY_POWER_SWITCH U 0 40 Y Y 1 F N
+F0 "U" -300 200 60 H V C CNN
+F1 "digidraw-rescue_STMPS2141STR-DIGIKEY_POWER_SWITCH" 0 -300 60 H V L CNN
+F2 "digikey-footprints:SOT-753" 200 200 60 H I L CNN
+F3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/e8/d7/48/25/eb/87/45/b3/CD00167470.pdf/files/CD00167470.pdf/jcr:content/translations/en.CD00167470.pdf" 200 300 60 H I L CNN
+F4 "497-6933-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "STMPS2141STR" 200 500 60 H I L CNN "MPN"
+F6 "Integrated Circuits (ICs)" 200 600 60 H I L CNN "Category"
+F7 "PMIC - Power Distribution Switches, Load Drivers" 200 700 60 H I L CNN "Family"
+F8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/e8/d7/48/25/eb/87/45/b3/CD00167470.pdf/files/CD00167470.pdf/jcr:content/translations/en.CD00167470.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/stmicroelectronics/STMPS2141STR/497-6933-1-ND/1880311" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "IC PWR SWITCH 1CH 500MA SOT23-5" 200 1000 60 H I L CNN "Description"
+F11 "STMicroelectronics" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -300 100 200 -200 0 1 0 f
+X OUT 1 300 0 100 L 50 50 1 1 O
+X GND 2 -100 -300 100 U 50 50 1 1 W
+X FAULT 3 300 -100 100 L 50 50 1 1 O
+X EN 4 -400 0 100 R 50 50 1 1 I
+X IN 5 -100 200 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# dk_TVS-Diodes_PGB1010603MR
+#
+DEF dk_TVS-Diodes_PGB1010603MR D 0 40 Y Y 1 F N
+F0 "D" -216 108 60 H V L CNN
+F1 "dk_TVS-Diodes_PGB1010603MR" 4 -130 60 H V C CNN
+F2 "digikey-footprints:0603" 200 200 60 H I L CNN
+F3 "https://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" 200 300 60 H I L CNN
+F4 "F2594CT-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "PGB1010603MR" 200 500 60 H I L CNN "MPN"
+F6 "Circuit Protection" 200 600 60 H I L CNN "Category"
+F7 "TVS - Diodes" 200 700 60 H I L CNN "Family"
+F8 "https://www.littelfuse.com/data/en/data_sheets/littelfuse_pulseguard-esd_pgb1.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/littelfuse-inc/PGB1010603MR/F2594CT-ND/813072" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TVS DIODE 24V 150V 0603" 200 1000 60 H I L CNN "Description"
+F11 "Littelfuse Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 3 0 1 0 0 0 0 -50 -25 -75 N
+P 3 0 1 0 0 0 0 50 25 75 N
+P 4 0 1 0 -100 50 -100 -50 0 0 -100 50 F
+P 4 0 1 0 100 50 100 -50 0 0 100 50 F
+X ~ 1 -200 0 100 R 50 50 1 1 P
+X ~ 2 200 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # power_+3.3V
 #
 DEF power_+3.3V #PWR 0 0 Y Y 1 F P
@@ -1042,27 +1096,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# pspice_MPMOS
-#
-DEF pspice_MPMOS M 0 0 Y Y 1 F N
-F0 "M" 300 50 50 H V L CNN
-F1 "pspice_MPMOS" 300 -50 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -50 100 -50 -100 N
-P 2 0 1 0 -25 -100 100 -100 N
-P 2 0 1 0 100 100 -25 100 N
-P 2 0 1 0 200 0 -25 0 N
-P 4 0 1 0 200 0 125 25 125 -25 200 0 F
-P 2 1 1 0 -25 -100 -25 100 N
-X D 1 100 -200 100 U 50 50 1 1 P
-X G 2 -200 0 150 R 50 50 1 1 I
-X S 3 100 200 100 D 50 50 1 1 P
-X B 4 200 200 200 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

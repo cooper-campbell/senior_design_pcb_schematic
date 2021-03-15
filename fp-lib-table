@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name TI_REG)(type KiCad)(uri ${KIPRJMOD}/ti/eec.pretty)(options "")(descr ""))
+  (lib (name MOSFET_TI)(type KiCad)(uri ${KIPRJMOD}/mosfet/eec.pretty)(options "")(descr ""))
+)

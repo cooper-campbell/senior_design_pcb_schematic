@@ -1,0 +1,73 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# ON Semi FDD5614P
+#
+DEF FDD5614P Q 0 40 Y Y 1 L N
+F0 "Q" 0 300 50 H V L CNN 
+F1 "FDD5614P" 0 400 50 H V L CNN 
+F2 "ON_Semi-369AS-09_2016-O-*" 0 500 50 H I L CNN 
+F3 "http://www.onsemi.com/pub/Collateral/FDD5614P-D.PDF" 0 600 50 H I L CNN 
+F4 "Trans" 0 700 50 H I L CNN "category"
+F5 "-15A" 0 800 50 H I L CNN "continuous drain current"
+F6 "Discrete Semiconductors" 0 900 50 H I L CNN "device class L1"
+F7 "Transistors" 0 1000 50 H I L CNN "device class L2"
+F8 "MOSFETs" 0 1100 50 H I L CNN "device class L3"
+F9 "MOSFET P-CH 60V 15A DPAK" 0 1200 50 H I L CNN "digikey description"
+F10 "FDD5614PCT-ND" 0 1300 50 H I L CNN "digikey part number"
+F11 "-60V" 0 1400 50 H I L CNN "drain to source breakdown voltage"
+F12 "76mΩ" 0 1500 50 H I L CNN "drain to source resistance"
+F13 "-60V" 0 1600 50 H I L CNN "drain to source voltage"
+F14 "http://www.onsemi.com/pub/Collateral/369AS.PDF" 0 1700 50 H I L CNN "footprint url"
+F15 "20V" 0 1800 50 H I L CNN "gate to source voltage"
+F16 "2.39mm" 0 1900 50 H I L CNN "height"
+F17 "759pF @ -30V" 0 2000 50 H I L CNN "input capacitace at vds"
+F18 "yes" 0 2100 50 H I L CNN "lead free"
+F19 "36114b9e5fc3cb00" 0 2200 50 H I L CNN "library id"
+F20 "ON Semi" 0 2300 50 H I L CNN "manufacturer"
+F21 "+175°C" 0 2400 50 H I L CNN "max junction temp"
+F22 "512-FDD5614P" 0 2500 50 H I L CNN "mouser part number"
+F23 "1" 0 2600 50 H I L CNN "number of P channels"
+F24 "1" 0 2700 50 H I L CNN "number of channels"
+F25 "DPAK3" 0 2800 50 H I L CNN "package"
+F26 "42W" 0 2900 50 H I L CNN "power dissipation"
+F27 "yes" 0 3000 50 H I L CNN "rohs"
+F28 "MOSFET" 0 3100 50 H I L CNN "technology"
+F29 "+175°C" 0 3200 50 H I L CNN "temperature range high"
+F30 "-55°C" 0 3300 50 H I L CNN "temperature range low"
+F31 "-1.6V" 0 3400 50 H I L CNN "threshold vgs"
+F32 "19ns" 0 3500 50 H I L CNN "turn off delay time"
+F33 "7ns" 0 3600 50 H I L CNN "turn on delay time"
+DRAW
+X G 1 100 0 140 R 40 0 1 1 P 
+X S 3 400 -200 200 U 40 0 1 1 P 
+X D 4 400 200 120 D 40 0 1 1 P 
+P 2 1 1 0 240 -100 240 100 N
+P 2 1 1 0 270 60 270 100 N
+P 2 1 1 0 270 -80 400 -80 N
+P 2 1 1 0 270 80 400 80 N
+P 2 1 1 0 300 0 400 0 N
+P 2 1 1 0 290 0 340 30 N
+P 2 1 1 0 290 0 340 -30 N
+P 2 1 1 0 340 30 340 -30 N
+P 2 1 1 0 330 10 330 -20 N
+P 2 1 1 0 270 -60 270 -100 N
+P 2 1 1 0 270 20 270 -20 N
+P 2 1 1 0 400 -80 470 -80 N
+P 2 1 1 0 530 80 530 -80 N
+P 2 1 1 0 470 80 400 80 N
+C 400 80 10 1 1 0 N
+C 400 -80 10 1 1 0 N
+P 2 1 1 0 530 -20 550 20 N
+P 2 1 1 0 550 20 510 20 N
+P 2 1 1 0 510 20 530 -20 N
+P 2 1 1 0 530 -20 510 -20 N
+P 2 1 1 0 510 -20 500 -30 N
+P 2 1 1 0 530 -20 550 -20 N
+P 2 1 1 0 550 -20 560 -10 N
+P 2 1 1 0 470 80 530 80 N
+P 2 1 1 0 530 -80 470 -80 N
+ENDDRAW
+ENDDEF
+#
+# End Library
