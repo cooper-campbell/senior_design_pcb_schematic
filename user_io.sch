@@ -21,6 +21,7 @@ F 0 "U3" H 1750 2400 50  0000 C CNN
 F 1 "STM32F051R8T6" H 2550 2450 50  0000 C CNN
 F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 1550 2500 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00039193.pdf" H 2050 4200 50  0001 C CNN
+F 4 "F0 processor for User IO" H 2050 4200 50  0001 C CNN "Description"
 	1    2050 4200
 	1    0    0    -1  
 $EndComp
@@ -62,6 +63,7 @@ F 0 "U4" H 7800 1750 50  0000 C CNN
 F 1 "CAT24C256" H 7800 1650 50  0000 C CNN
 F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 8100 1400 50  0001 C CNN
 F 3 "https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF" H 8100 1400 50  0001 C CNN
+F 4 "EEPROM for storage" H 8100 1400 50  0001 C CNN "Description"
 	1    8100 1400
 	1    0    0    -1  
 $EndComp
@@ -73,6 +75,7 @@ F 0 "J7" H 10050 2400 50  0000 C CNN
 F 1 "Conn_01x15_Female" H 10100 4050 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 10100 3200 50  0001 C CNN
 F 3 "~" H 10100 3200 50  0001 C CNN
+F 4 "Header for RA8875 pins" H 10100 3200 50  0001 C CNN "Description"
 	1    10100 3200
 	1    0    0    -1  
 $EndComp
@@ -253,6 +256,7 @@ F 0 "J3" H 6850 1500 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 7000 900 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x38_P2.54mm_Vertical" H 6800 1200 50  0001 C CNN
 F 3 "~" H 6800 1200 50  0001 C CNN
+F 4 "STLink header for programming/debugging" H 6800 1200 50  0001 C CNN "Description"
 	1    6800 1200
 	1    0    0    -1  
 $EndComp
@@ -323,6 +327,7 @@ F 0 "C10" H 6730 5860 50  0000 L CNN
 F 1 "100n" H 6725 5740 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6700 5800 50  0001 C CNN
 F 3 "~" H 6700 5800 50  0001 C CNN
+F 4 "3.3 V" H 6700 5800 50  0001 C CNN "Min Voltage Rating"
 	1    6700 5800
 	1    0    0    -1  
 $EndComp
@@ -334,6 +339,7 @@ F 0 "C12" H 7080 5860 50  0000 L CNN
 F 1 "4.7u" H 7075 5740 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7050 5800 50  0001 C CNN
 F 3 "~" H 7050 5800 50  0001 C CNN
+F 4 "3.3 V" H 7050 5800 50  0001 C CNN "Min Voltage Rating"
 	1    7050 5800
 	1    0    0    -1  
 $EndComp
@@ -345,6 +351,7 @@ F 0 "C14" H 7425 5860 50  0000 L CNN
 F 1 "100n" H 7420 5745 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7400 5800 50  0001 C CNN
 F 3 "~" H 7400 5800 50  0001 C CNN
+F 4 "3.3 V" H 7400 5800 50  0001 C CNN "Min Voltage Rating"
 	1    7400 5800
 	1    0    0    -1  
 $EndComp
@@ -356,6 +363,7 @@ F 0 "C16" H 8170 5865 50  0000 L CNN
 F 1 "1u" H 8180 5740 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8150 5800 50  0001 C CNN
 F 3 "~" H 8150 5800 50  0001 C CNN
+F 4 "3.3 V" H 8150 5800 50  0001 C CNN "Min Voltage Rating"
 	1    8150 5800
 	1    0    0    -1  
 $EndComp
@@ -378,6 +386,7 @@ F 0 "C15" H 7735 5865 50  0000 L CNN
 F 1 "100n" H 7720 5740 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7700 5800 50  0001 C CNN
 F 3 "~" H 7700 5800 50  0001 C CNN
+F 4 "3.3 V" H 7700 5800 50  0001 C CNN "Min Voltage Rating"
 	1    7700 5800
 	1    0    0    -1  
 $EndComp
@@ -568,6 +577,7 @@ F 0 "C8" H 5800 3950 50  0000 R CNN
 F 1 "100n" H 5900 4050 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5650 4000 50  0001 C CNN
 F 3 "~" H 5650 4000 50  0001 C CNN
+F 4 "3.3 V" H 5650 4000 50  0001 C CNN "Min Voltage Rating"
 	1    5650 4000
 	-1   0    0    1   
 $EndComp
@@ -698,6 +708,7 @@ F 0 "J8" H 10200 4600 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 10050 5150 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 10150 4850 50  0001 C CNN
 F 3 "~" H 10150 4850 50  0001 C CNN
+F 4 "Header for F0 UART Debug" H 10150 4850 50  0001 C CNN "Description"
 	1    10150 4850
 	-1   0    0    1   
 $EndComp
@@ -709,6 +720,7 @@ F 0 "J6" H 9050 4600 50  0000 R CNN
 F 1 "Conn_01x04_Male" H 9200 5000 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x38_P2.54mm_Vertical" H 9000 4850 50  0001 C CNN
 F 3 "~" H 9000 4850 50  0001 C CNN
+F 4 "Header for EEPROM I2C Debug" H 9000 4850 50  0001 C CNN "Description"
 	1    9000 4850
 	-1   0    0    1   
 $EndComp
@@ -802,6 +814,7 @@ F 0 "J5" H 8100 4500 50  0000 R CNN
 F 1 "Conn_01x05_Male" H 8200 5000 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x38_P2.54mm_Vertical" H 8050 4750 50  0001 C CNN
 F 3 "~" H 8050 4750 50  0001 C CNN
+F 4 "Header for subsystem SPI Debug" H 8050 4750 50  0001 C CNN "Description"
 	1    8050 4750
 	-1   0    0    1   
 $EndComp
@@ -902,6 +915,7 @@ F 0 "J4" H 7350 4400 50  0000 R CNN
 F 1 "Conn_01x06_Male" H 7550 5000 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x38_P2.54mm_Vertical" H 7300 4750 50  0001 C CNN
 F 3 "~" H 7300 4750 50  0001 C CNN
+F 4 "Header for Screen SPI Debug" H 7300 4750 50  0001 C CNN "Description"
 	1    7300 4750
 	-1   0    0    1   
 $EndComp
@@ -1108,6 +1122,7 @@ F 0 "C13" H 7442 3746 50  0000 L CNN
 F 1 "20p" H 7442 3655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7350 3700 50  0001 C CNN
 F 3 "~" H 7350 3700 50  0001 C CNN
+F 4 "3.3 V" H 7350 3700 50  0001 C CNN "Min Voltage Rating"
 	1    7350 3700
 	1    0    0    -1  
 $EndComp
@@ -1121,6 +1136,7 @@ F 0 "C11" H 6750 3750 50  0000 L CNN
 F 1 "20p" H 6700 3650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 3700 50  0001 C CNN
 F 3 "~" H 6900 3700 50  0001 C CNN
+F 4 "3.3 V" H 6900 3700 50  0001 C CNN "Min Voltage Rating"
 	1    6900 3700
 	1    0    0    -1  
 $EndComp
@@ -1235,6 +1251,7 @@ F 0 "SW2" H 5900 2800 50  0000 L CNN
 F 1 "SW_Push_Dual" H 5700 2900 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVPBF" H 6050 2900 50  0001 C CNN
 F 3 "~" H 6050 2900 50  0001 C CNN
+F 4 "Pushbuttons for NRST/BOOT" H 6050 2700 50  0001 C CNN "Description"
 	1    6050 2700
 	0    1    1    0   
 $EndComp
@@ -1270,6 +1287,7 @@ F 0 "C9" H 5850 2650 50  0000 R CNN
 F 1 "100n" H 5950 2750 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5700 2700 50  0001 C CNN
 F 3 "~" H 5700 2700 50  0001 C CNN
+F 4 "3.3 V" H 5700 2700 50  0001 C CNN "Min Voltage Rating"
 	1    5700 2700
 	-1   0    0    1   
 $EndComp
@@ -1291,6 +1309,7 @@ F 0 "SW1" H 6000 4100 50  0000 L CNN
 F 1 "SW_Push_Dual" H 5850 4200 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVPBF" H 6000 4200 50  0001 C CNN
 F 3 "~" H 6000 4200 50  0001 C CNN
+F 4 "Pushbuttons for NRST/BOOT" H 6000 4000 50  0001 C CNN "Description"
 	1    6000 4000
 	0    1    1    0   
 $EndComp
@@ -1361,6 +1380,7 @@ F 0 "C18" H 9035 1510 50  0000 L CNN
 F 1 "100n" H 9000 1400 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9200 1450 50  0001 C CNN
 F 3 "~" H 9200 1450 50  0001 C CNN
+F 4 "3.3 V" H 9200 1450 50  0001 C CNN "Min Voltage Rating"
 	1    9200 1450
 	1    0    0    -1  
 $EndComp
@@ -1372,6 +1392,7 @@ F 0 "C19" H 9505 1510 50  0000 L CNN
 F 1 "100n" H 9505 1390 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9500 1450 50  0001 C CNN
 F 3 "~" H 9500 1450 50  0001 C CNN
+F 4 "3.3 V" H 9500 1450 50  0001 C CNN "Min Voltage Rating"
 	1    9500 1450
 	1    0    0    -1  
 $EndComp
@@ -1421,6 +1442,7 @@ F 0 "SW3" H 6100 1300 50  0000 L CNN
 F 1 "SW_Push_Dual" H 5800 1400 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_SPST_EVPBF" H 6100 1400 50  0001 C CNN
 F 3 "~" H 6100 1400 50  0001 C CNN
+F 4 "User push button" H 6100 1200 50  0001 C CNN "Description"
 	1    6100 1200
 	0    1    1    0   
 $EndComp
@@ -1434,6 +1456,7 @@ F 0 "C7" H 5800 1200 50  0000 R CNN
 F 1 "100n" H 5870 1305 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 5650 1250 50  0001 C CNN
 F 3 "~" H 5650 1250 50  0001 C CNN
+F 4 "3.3 V" H 5650 1250 50  0001 C CNN "Min Voltage Rating"
 	1    5650 1250
 	-1   0    0    1   
 $EndComp
@@ -1528,6 +1551,7 @@ F 0 "Y1" H 6950 3450 50  0000 L CNN
 F 1 "8MHz" H 6850 3600 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_Abracon_ABM10-4Pin_2.5x2.0mm" H 7100 3500 50  0001 C CNN
 F 3 "~" H 7100 3500 50  0001 C CNN
+F 4 "HSE crystals" H 7100 3500 50  0001 C CNN "Description"
 	1    7100 3500
 	1    0    0    -1  
 $EndComp

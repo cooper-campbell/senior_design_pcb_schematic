@@ -41,6 +41,7 @@ F 0 "J2" H 5657 1725 50  0000 C CNN
 F 1 "Barrel_Jack" H 5657 1634 50  0000 C CNN
 F 2 "digikey-footprints:Barrel_Jack_5.5mmODx2.1mmID_PJ-202A" H 5650 1360 50  0001 C CNN
 F 3 "~" H 5650 1360 50  0001 C CNN
+F 4 "Barrel jack for power (maybe)" H 5600 1400 50  0001 C CNN "Description"
 	1    5600 1400
 	1    0    0    -1  
 $EndComp
@@ -77,6 +78,7 @@ F 0 "H1" H 5100 5299 50  0000 L CNN
 F 1 "MountingHole_Pad" H 5100 5208 50  0000 L CNN
 F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 5000 5250 50  0001 C CNN
 F 3 "~" H 5000 5250 50  0001 C CNN
+F 4 "Mounting Holes" H 5000 5250 50  0001 C CNN "Description"
 	1    5000 5250
 	1    0    0    -1  
 $EndComp
@@ -101,6 +103,7 @@ F 0 "H2" H 5100 5849 50  0000 L CNN
 F 1 "MountingHole_Pad" H 5100 5758 50  0000 L CNN
 F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 5000 5800 50  0001 C CNN
 F 3 "~" H 5000 5800 50  0001 C CNN
+F 4 "Mounting Holes" H 5000 5800 50  0001 C CNN "Description"
 	1    5000 5800
 	1    0    0    -1  
 $EndComp
@@ -125,6 +128,7 @@ F 0 "H3" H 5100 6399 50  0000 L CNN
 F 1 "MountingHole_Pad" H 5100 6308 50  0000 L CNN
 F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 5000 6350 50  0001 C CNN
 F 3 "~" H 5000 6350 50  0001 C CNN
+F 4 "Mounting Holes" H 5000 6350 50  0001 C CNN "Description"
 	1    5000 6350
 	1    0    0    -1  
 $EndComp
@@ -149,6 +153,7 @@ F 0 "H4" H 5100 6999 50  0000 L CNN
 F 1 "MountingHole_Pad" H 5100 6908 50  0000 L CNN
 F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 5000 6950 50  0001 C CNN
 F 3 "~" H 5000 6950 50  0001 C CNN
+F 4 "Mounting Holes" H 5000 6950 50  0001 C CNN "Description"
 	1    5000 6950
 	1    0    0    -1  
 $EndComp
@@ -173,6 +178,7 @@ F 0 "J1" H 4107 1767 50  0000 C CNN
 F 1 "USB_B_Micro" H 4107 1676 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 4200 1250 50  0001 C CNN
 F 3 "~" H 4200 1250 50  0001 C CNN
+F 4 "USB B micro for power" H 4050 1300 50  0001 C CNN "Description"
 	1    4050 1300
 	1    0    0    -1  
 $EndComp
@@ -308,6 +314,7 @@ F 0 "F1" H 1200 3135 50  0000 C CNN
 F 1 "3" H 1200 3044 50  0000 C CNN
 F 2 "Fuse:Fuse_0805_2012Metric" H 1200 2950 50  0001 C CNN
 F 3 "~" H 1200 2950 50  0001 C CNN
+F 4 "Input current fuse" H 1200 2950 50  0001 C CNN "Description"
 	1    1200 2950
 	1    0    0    -1  
 $EndComp
@@ -323,6 +330,7 @@ F 0 "C1" H 1492 3196 50  0000 L CNN
 F 1 "1u" H 1492 3105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 1400 3150 50  0001 C CNN
 F 3 "~" H 1400 3150 50  0001 C CNN
+F 4 "16 V" H 1400 3150 50  0001 C CNN "Min Voltage Rating"
 	1    1400 3150
 	1    0    0    -1  
 $EndComp
@@ -363,6 +371,7 @@ F 0 "D6" V 2854 3218 50  0000 L CNN
 F 1 "9.1" V 2945 3218 50  0000 L CNN
 F 2 "Diode_SMD:D_0603_1608Metric" V 2900 3150 50  0001 C CNN
 F 3 "~" V 2900 3150 50  0001 C CNN
+F 4 "Debug LED" H 2900 3150 50  0001 C CNN "Description"
 	1    2900 3150
 	0    1    1    0   
 $EndComp
@@ -405,6 +414,7 @@ F 0 "C2" H 3392 3196 50  0000 L CNN
 F 1 "10u" H 3392 3105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3300 3150 50  0001 C CNN
 F 3 "~" H 3300 3150 50  0001 C CNN
+F 4 "16 V" H 3300 3150 50  0001 C CNN "Min Voltage Rating"
 	1    3300 3150
 	1    0    0    -1  
 $EndComp
@@ -416,6 +426,7 @@ F 0 "C3" H 3692 3196 50  0000 L CNN
 F 1 "10u" H 3692 3105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3600 3150 50  0001 C CNN
 F 3 "~" H 3600 3150 50  0001 C CNN
+F 4 "16 V" H 3600 3150 50  0001 C CNN "Min Voltage Rating"
 	1    3600 3150
 	1    0    0    -1  
 $EndComp
@@ -479,6 +490,7 @@ F 28 "2.4MHz" H 4500 5950 50  0001 L CNN "switching frequency"
 F 29 "Buck-Boost" H 4500 6050 50  0001 L CNN "switching topology"
 F 30 "+125°C" H 4500 6150 50  0001 L CNN "temperature range high"
 F 31 "-40°C" H 4500 6250 50  0001 L CNN "temperature range low"
+F 32 "Buck/boost converter" H 4500 2950 50  0001 C CNN "Description"
 	1    4500 2950
 	1    0    0    -1  
 $EndComp
@@ -490,6 +502,7 @@ F 0 "C4" H 4010 3110 50  0000 L CNN
 F 1 "10u" H 4050 3000 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4000 3050 50  0001 C CNN
 F 3 "~" H 4000 3050 50  0001 C CNN
+F 4 "16 V" H 4000 3050 50  0001 C CNN "Min Voltage Rating"
 	1    4000 3050
 	1    0    0    -1  
 $EndComp
@@ -502,6 +515,7 @@ F 0 "C5" H 4150 3400 50  0000 L CNN
 F 1 "100n" H 4150 3300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4100 3300 50  0001 C CNN
 F 3 "~" H 4100 3300 50  0001 C CNN
+F 4 "16 V" H 4100 3300 50  0001 C CNN "Min Voltage Rating"
 	1    4100 3300
 	1    0    0    -1  
 $EndComp
@@ -557,6 +571,7 @@ F 0 "L1" H 4600 3350 50  0000 R CNN
 F 1 "1.5u" H 4700 3450 50  0000 R CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" H 4500 3400 50  0001 C CNN
 F 3 "~" H 4500 3400 50  0001 C CNN
+F 4 "Buck/Boost converter inductor" H 4500 3400 50  0001 C CNN "Description"
 	1    4500 3400
 	-1   0    0    1   
 $EndComp
@@ -601,6 +616,7 @@ F 0 "C6" H 5764 3112 50  0000 L CNN
 F 1 "10u" H 5738 3044 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5950 3050 50  0001 C CNN
 F 3 "~" H 5950 3050 50  0001 C CNN
+F 4 "5.2 V" H 5950 3050 50  0001 C CNN "Min Voltage Rating"
 	1    5950 3050
 	1    0    0    -1  
 $EndComp
@@ -697,6 +713,7 @@ F 0 "C48" H 6842 3146 50  0000 L CNN
 F 1 "22u" H 6842 3055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6750 3100 50  0001 C CNN
 F 3 "~" H 6750 3100 50  0001 C CNN
+F 4 "5.2 V" H 6750 3100 50  0001 C CNN "Min Voltage Rating"
 	1    6750 3100
 	1    0    0    -1  
 $EndComp
@@ -708,6 +725,7 @@ F 0 "C49" H 7142 3146 50  0000 L CNN
 F 1 "22u" H 7142 3055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7050 3100 50  0001 C CNN
 F 3 "~" H 7050 3100 50  0001 C CNN
+F 4 "5.2 V" H 7050 3100 50  0001 C CNN "Min Voltage Rating"
 	1    7050 3100
 	1    0    0    -1  
 $EndComp
@@ -719,6 +737,7 @@ F 0 "C50" H 7442 3146 50  0000 L CNN
 F 1 "22u" H 7442 3055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7350 3100 50  0001 C CNN
 F 3 "~" H 7350 3100 50  0001 C CNN
+F 4 "5.2 V" H 7350 3100 50  0001 C CNN "Min Voltage Rating"
 	1    7350 3100
 	1    0    0    -1  
 $EndComp
@@ -794,6 +813,7 @@ F 0 "U8" H 8400 3792 50  0000 C CNN
 F 1 "LM117_TO3" H 8400 3701 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-3" H 8400 3750 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 8400 3550 50  0001 C CNN
+F 4 "Converters for +5 to +3.3 V" H 8400 3550 50  0001 C CNN "Description"
 	1    8400 3550
 	1    0    0    -1  
 $EndComp
@@ -811,6 +831,7 @@ F 0 "C51" H 7614 4962 50  0000 L CNN
 F 1 "10u" H 7588 4894 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 7800 4900 50  0001 C CNN
 F 3 "~" H 7800 4900 50  0001 C CNN
+F 4 "5.2 V" H 7800 4900 50  0001 C CNN "Min Voltage Rating"
 	1    7800 4900
 	1    0    0    -1  
 $EndComp
@@ -888,6 +909,7 @@ F 0 "C53" H 8942 5046 50  0000 L CNN
 F 1 "100n" H 8942 4955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8850 5000 50  0001 C CNN
 F 3 "~" H 8850 5000 50  0001 C CNN
+F 4 "3.3 V" H 8850 5000 50  0001 C CNN "Min Voltage Rating"
 	1    8850 5000
 	1    0    0    -1  
 $EndComp
@@ -899,6 +921,7 @@ F 0 "C55" H 9292 5046 50  0000 L CNN
 F 1 "10u" H 9292 4955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9200 5000 50  0001 C CNN
 F 3 "~" H 9200 5000 50  0001 C CNN
+F 4 "3.3 V" H 9200 5000 50  0001 C CNN "Min Voltage Rating"
 	1    9200 5000
 	1    0    0    -1  
 $EndComp
@@ -955,6 +978,7 @@ F 0 "C52" H 7814 3762 50  0000 L CNN
 F 1 "10u" H 7788 3694 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8000 3700 50  0001 C CNN
 F 3 "~" H 8000 3700 50  0001 C CNN
+F 4 "5.2 V" H 8000 3700 50  0001 C CNN "Min Voltage Rating"
 	1    8000 3700
 	1    0    0    -1  
 $EndComp
@@ -999,6 +1023,7 @@ F 0 "C54" H 9242 3796 50  0000 L CNN
 F 1 "100n" H 9242 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 9150 3750 50  0001 C CNN
 F 3 "~" H 9150 3750 50  0001 C CNN
+F 4 "3.3 V" H 9150 3750 50  0001 C CNN "Min Voltage Rating"
 	1    9150 3750
 	1    0    0    -1  
 $EndComp
@@ -1010,6 +1035,7 @@ F 0 "C56" H 9592 3796 50  0000 L CNN
 F 1 "10u" H 9592 3705 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9500 3750 50  0001 C CNN
 F 3 "~" H 9500 3750 50  0001 C CNN
+F 4 "3.3 V" H 9500 3750 50  0001 C CNN "Min Voltage Rating"
 	1    9500 3750
 	1    0    0    -1  
 $EndComp
@@ -1130,6 +1156,7 @@ F 30 "-55°C" H 2400 6650 50  0001 L CNN "temperature range low"
 F 31 "-1.6V" H 2400 6750 50  0001 L CNN "threshold vgs"
 F 32 "19ns" H 2400 6850 50  0001 L CNN "turn off delay time"
 F 33 "7ns" H 2400 6950 50  0001 L CNN "turn on delay time"
+F 34 "MOSFET for bias protection" H 2400 3350 50  0001 C CNN "Description"
 	1    2400 3350
 	0    -1   -1   0   
 $EndComp
@@ -1141,6 +1168,7 @@ F 0 "U2" H 8200 4992 50  0000 C CNN
 F 1 "LM117_TO3" H 8200 4901 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-3" H 8200 4950 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 8200 4750 50  0001 C CNN
+F 4 "Converters for +5 to +3.3 V" H 8200 4750 50  0001 C CNN "Description"
 	1    8200 4750
 	1    0    0    -1  
 $EndComp
