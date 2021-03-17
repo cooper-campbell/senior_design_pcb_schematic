@@ -8,4 +8,6 @@
   (lib (name dk_Transistors-FETs-MOSFETs-Arrays)(type Legacy)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-symbols/dk_Transistors-FETs-MOSFETs-Arrays.lib)(options "")(descr ""))
   (lib (name FDD5614P)(type Legacy)(uri ${KIPRJMOD}/mosfet/FDD5614P.lib)(options "")(descr ""))
   (lib (name dk_TVS-Diodes)(type Legacy)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-symbols/dk_TVS-Diodes.lib)(options "")(descr ""))
+  (lib (name V7803-1500R)(type Legacy)(uri ${KIPRJMOD}/v7803/V7803-1500R.lib)(options "")(descr ""))
+  (lib (name lm317_ti)(type Legacy)(uri ${KIPRJMOD}/ti/lm317_models/KiCAD/2021-03-17_19-16-56/2021-03-17_19-16-56.lib)(options "")(descr ""))
 )

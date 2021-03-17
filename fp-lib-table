@@ -2,4 +2,6 @@
   (lib (name digikey-footprints)(type KiCad)(uri ${KIPRJMOD}/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
   (lib (name TI_REG)(type KiCad)(uri ${KIPRJMOD}/ti/eec.pretty)(options "")(descr ""))
   (lib (name MOSFET_TI)(type KiCad)(uri ${KIPRJMOD}/mosfet/eec.pretty)(options "")(descr ""))
+  (lib (name v7803)(type KiCad)(uri ${KIPRJMOD}/v7803)(options "")(descr ""))
+  (lib (name lm317_ti)(type KiCad)(uri /home/cooper/school/senior/senior_design/digidraw/ti/lm317_models/KiCAD/2021-03-17_19-16-56/footprints.pretty)(options "")(descr ""))
 )
