@@ -966,7 +966,7 @@ U 1 1 60921649
 P 6350 1200
 F 0 "J13" H 6450 900 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 6300 1450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6350 1200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6350 1200 50  0001 C CNN
 F 3 "~" H 6350 1200 50  0001 C CNN
 F 4 "Header for UART Debug" H 6350 1200 50  0001 C CNN "Description"
 	1    6350 1200
@@ -1247,7 +1247,7 @@ U 1 1 60505AA2
 P 5100 4250
 F 0 "J11" H 5150 4550 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 5350 3950 50  0000 C CNN
-F 2 "Connector_USB:USB_A_Molex_67643_Horizontal" H 5100 4250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 5100 4250 50  0001 C CNN
 F 3 "~" H 5100 4250 50  0001 C CNN
 F 4 "STLink Header for programming/debug" H 5100 4250 50  0001 C CNN "Description"
 	1    5100 4250
@@ -1504,7 +1504,7 @@ U 1 1 604E0612
 P 5500 1100
 F 0 "J12" H 5750 900 50  0000 R CNN
 F 1 "Conn_01x03_Male" H 5850 1400 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5500 1100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5500 1100 50  0001 C CNN
 F 3 "~" H 5500 1100 50  0001 C CNN
 F 4 "Header for analog out probes" H 5500 1100 50  0001 C CNN "Description"
 	1    5500 1100
@@ -1543,7 +1543,7 @@ U 1 1 610AC104
 P 4600 1100
 F 0 "J9" H 4700 800 50  0000 R CNN
 F 1 "Conn_01x05_Male" V 4550 1400 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 4600 1100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 4600 1100 50  0001 C CNN
 F 3 "~" H 4600 1100 50  0001 C CNN
 F 4 "Header for I2S Debug" H 4600 1100 50  0001 C CNN "Description"
 	1    4600 1100

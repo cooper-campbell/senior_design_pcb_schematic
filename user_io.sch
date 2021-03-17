@@ -73,7 +73,7 @@ U 1 1 604677A6
 P 10100 3200
 F 0 "J7" H 10050 2400 50  0000 C CNN
 F 1 "Conn_01x15_Female" H 10100 4050 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 10100 3200 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical" H 10100 3200 50  0001 C CNN
 F 3 "~" H 10100 3200 50  0001 C CNN
 F 4 "Header for RA8875 pins" H 10100 3200 50  0001 C CNN "Description"
 	1    10100 3200
@@ -254,7 +254,7 @@ U 1 1 61020F75
 P 6800 1200
 F 0 "J3" H 6850 1500 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 7000 900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x38_P2.54mm_Vertical" H 6800 1200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6800 1200 50  0001 C CNN
 F 3 "~" H 6800 1200 50  0001 C CNN
 F 4 "STLink header for programming/debugging" H 6800 1200 50  0001 C CNN "Description"
 	1    6800 1200
@@ -706,7 +706,7 @@ U 1 1 605A648E
 P 10150 4850
 F 0 "J8" H 10200 4600 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 10050 5150 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 10150 4850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10150 4850 50  0001 C CNN
 F 3 "~" H 10150 4850 50  0001 C CNN
 F 4 "Header for F0 UART Debug" H 10150 4850 50  0001 C CNN "Description"
 	1    10150 4850
@@ -718,7 +718,7 @@ U 1 1 605A8784
 P 9000 4850
 F 0 "J6" H 9050 4600 50  0000 R CNN
 F 1 "Conn_01x04_Male" H 9200 5000 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x38_P2.54mm_Vertical" H 9000 4850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9000 4850 50  0001 C CNN
 F 3 "~" H 9000 4850 50  0001 C CNN
 F 4 "Header for EEPROM I2C Debug" H 9000 4850 50  0001 C CNN "Description"
 	1    9000 4850
@@ -812,7 +812,7 @@ U 1 1 6060D4E1
 P 8050 4750
 F 0 "J5" H 8100 4500 50  0000 R CNN
 F 1 "Conn_01x05_Male" H 8200 5000 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x38_P2.54mm_Vertical" H 8050 4750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 8050 4750 50  0001 C CNN
 F 3 "~" H 8050 4750 50  0001 C CNN
 F 4 "Header for subsystem SPI Debug" H 8050 4750 50  0001 C CNN "Description"
 	1    8050 4750
@@ -913,7 +913,7 @@ U 1 1 606FEFAE
 P 7300 4750
 F 0 "J4" H 7350 4400 50  0000 R CNN
 F 1 "Conn_01x06_Male" H 7550 5000 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x38_P2.54mm_Vertical" H 7300 4750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7300 4750 50  0001 C CNN
 F 3 "~" H 7300 4750 50  0001 C CNN
 F 4 "Header for Screen SPI Debug" H 7300 4750 50  0001 C CNN "Description"
 	1    7300 4750
