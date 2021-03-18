@@ -68,18 +68,6 @@ F 4 "EEPROM for storage" H 8100 1400 50  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x15_Female J7
-U 1 1 604677A6
-P 10100 3200
-F 0 "J7" H 10050 2400 50  0000 C CNN
-F 1 "Conn_01x15_Female" H 10100 4050 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x15_P2.54mm_Vertical" H 10100 3200 50  0001 C CNN
-F 3 "~" H 10100 3200 50  0001 C CNN
-F 4 "Header for RA8875 pins" H 10100 3200 50  0001 C CNN "Description"
-	1    10100 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R23
 U 1 1 6046EA6A
 P 9800 1350
@@ -191,19 +179,19 @@ Text Notes 7500 700  0    50   ~ 0
 I2C Memory Circuit
 Text Notes 6650 2150 0    50   ~ 0
 User IO to DAC SPI
-Text Label 9900 2900 2    50   ~ 0
+Text Label 10050 2800 2    50   ~ 0
 RA8875_SCK
-Text Label 9900 3000 2    50   ~ 0
+Text Label 10050 2900 2    50   ~ 0
 RA8875_MISO
-Text Label 9900 3100 2    50   ~ 0
+Text Label 10050 3000 2    50   ~ 0
 RA8875_MOSI
-Text Label 9900 3200 2    50   ~ 0
+Text Label 10050 3100 2    50   ~ 0
 RA8875_NSS
-Text Label 9900 3300 2    50   ~ 0
+Text Label 10050 3200 2    50   ~ 0
 RA8875_NRST
-Text Label 9900 3400 2    50   ~ 0
+Text Label 10050 3300 2    50   ~ 0
 RA8875_WAIT
-Text Label 9900 3500 2    50   ~ 0
+Text Label 10050 3400 2    50   ~ 0
 RA8875_INT
 Wire Wire Line
 	2650 5500 2750 5500
@@ -706,7 +694,7 @@ U 1 1 605A648E
 P 10150 4850
 F 0 "J8" H 10200 4600 50  0000 R CNN
 F 1 "Conn_01x04_Male" V 10050 5150 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10150 4850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 10150 4850 50  0001 C CNN
 F 3 "~" H 10150 4850 50  0001 C CNN
 F 4 "Header for F0 UART Debug" H 10150 4850 50  0001 C CNN "Description"
 	1    10150 4850
@@ -964,41 +952,16 @@ RA8875_INT
 Text Label 2800 4400 0    50   ~ 0
 RA8875_WAIT
 $Comp
-L power:+3.3V #PWR050
-U 1 1 6077D51D
-P 9350 2400
-F 0 "#PWR050" H 9350 2250 50  0001 C CNN
-F 1 "+3.3V" H 9365 2573 50  0000 C CNN
-F 2 "" H 9350 2400 50  0001 C CNN
-F 3 "" H 9350 2400 50  0001 C CNN
-	1    9350 2400
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR051
 U 1 1 6077DDED
-P 9350 2650
-F 0 "#PWR051" H 9350 2400 50  0001 C CNN
-F 1 "GND" H 9355 2477 50  0000 C CNN
-F 2 "" H 9350 2650 50  0001 C CNN
-F 3 "" H 9350 2650 50  0001 C CNN
-	1    9350 2650
+P 9450 2750
+F 0 "#PWR051" H 9450 2500 50  0001 C CNN
+F 1 "GND" H 9455 2577 50  0000 C CNN
+F 2 "" H 9450 2750 50  0001 C CNN
+F 3 "" H 9450 2750 50  0001 C CNN
+	1    9450 2750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9350 2400 9350 2500
-Wire Wire Line
-	9350 2650 9350 2600
-NoConn ~ 9900 3600
-NoConn ~ 9900 3700
-NoConn ~ 9900 3800
-NoConn ~ 9900 3900
-NoConn ~ 9900 2700
-NoConn ~ 9900 2800
-Wire Wire Line
-	9350 2600 9900 2600
-Wire Wire Line
-	9900 2500 9350 2500
 Text Label 8750 2700 0    50   ~ 0
 RA8875_NSS
 $Comp
@@ -1208,13 +1171,13 @@ Wire Notes Line
 	6550 4050 7850 4050
 Text Notes 6550 3250 0    50   ~ 0
 External Oscillator
-Text Label 7050 4550 2    50   ~ 0
+Text Label 7050 4850 2    50   ~ 0
 RA8875_NSS
 Text Label 7050 4750 2    50   ~ 0
 RA8875_MOSI
-Text Label 7050 4850 2    50   ~ 0
-RA8875_MISO
 Text Label 7050 4650 2    50   ~ 0
+RA8875_MISO
+Text Label 7050 4550 2    50   ~ 0
 RA8875_SCK
 Wire Wire Line
 	7050 4550 7100 4550
@@ -1555,4 +1518,34 @@ F 4 "HSE crystals" H 7100 3500 50  0001 C CNN "Description"
 	1    7100 3500
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_01x09_Male J7
+U 1 1 60803787
+P 10250 3000
+F 0 "J7" H 10222 2932 50  0000 R CNN
+F 1 "Conn_01x09_Male" H 10650 2500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 10250 3000 50  0001 C CNN
+F 3 "~" H 10250 3000 50  0001 C CNN
+	1    10250 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 2500 9450 2600
+$Comp
+L power:+3.3V #PWR050
+U 1 1 6077D51D
+P 9450 2500
+F 0 "#PWR050" H 9450 2350 50  0001 C CNN
+F 1 "+3.3V" H 9465 2673 50  0000 C CNN
+F 2 "" H 9450 2500 50  0001 C CNN
+F 3 "" H 9450 2500 50  0001 C CNN
+	1    9450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 2700 9450 2750
+Wire Wire Line
+	9450 2700 10050 2700
+Wire Wire Line
+	9450 2600 10050 2600
 $EndSCHEMATC

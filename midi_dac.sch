@@ -909,10 +909,10 @@ Wire Wire Line
 	10000 4100 10000 4550
 Wire Wire Line
 	9600 4550 10000 4550
-Text Label 3650 4950 0    50   ~ 0
+Text Label 3650 4450 0    50   ~ 0
 I2S_SD
 Wire Wire Line
-	3400 4950 3250 4950
+	3400 4450 3250 4450
 Wire Notes Line
 	8250 4800 10500 4800
 Wire Notes Line
@@ -956,10 +956,8 @@ Text Label 3400 1350 0    50   ~ 0
 UART4_RX
 Wire Wire Line
 	3400 1350 3250 1350
-Text Label 3350 5650 0    50   ~ 0
+Text Label 3400 1250 0    50   ~ 0
 UART4_TX
-Wire Wire Line
-	3350 5650 3250 5650
 $Comp
 L Connector:Conn_01x04_Male J13
 U 1 1 60921649
@@ -1024,10 +1022,10 @@ Text Label 3400 2150 0    50   ~ 0
 USB_FS_VBUS
 Wire Wire Line
 	3400 2150 3250 2150
-Text Label 3400 4650 0    50   ~ 0
+Text Label 3400 2250 0    50   ~ 0
 USB_VBUS_EN
 Wire Wire Line
-	3400 4650 3250 4650
+	3400 2250 3250 2250
 $Comp
 L digidraw-rescue:STMPS2141STR-DIGIKEY_POWER_SWITCH U7
 U 1 1 609C4170
@@ -1147,8 +1145,6 @@ Wire Wire Line
 Connection ~ 5050 2850
 Text Label 7200 5100 2    50   ~ 0
 I2S_SD
-Text Label 3400 1250 0    50   ~ 0
-GPIO_EXTI0
 Wire Wire Line
 	3400 1250 3250 1250
 Text Label 7200 5200 2    50   ~ 0
@@ -1393,9 +1389,8 @@ Text Notes 4400 2050 0    50   ~ 0
 Output Connectors\n
 NoConn ~ 3250 1450
 NoConn ~ 3250 1550
-NoConn ~ 3250 1850
 NoConn ~ 3250 2050
-NoConn ~ 3250 2250
+NoConn ~ 3250 4650
 NoConn ~ 3250 2750
 NoConn ~ 3250 2950
 NoConn ~ 3250 3050
@@ -1407,7 +1402,6 @@ NoConn ~ 3250 3850
 NoConn ~ 3250 4050
 NoConn ~ 3250 4250
 NoConn ~ 3250 4350
-NoConn ~ 3250 4450
 NoConn ~ 3250 4750
 NoConn ~ 3250 4850
 NoConn ~ 3250 5050
@@ -1543,7 +1537,7 @@ U 1 1 610AC104
 P 4600 1100
 F 0 "J9" H 4700 800 50  0000 R CNN
 F 1 "Conn_01x05_Male" V 4550 1400 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 4600 1100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4600 1100 50  0001 C CNN
 F 3 "~" H 4600 1100 50  0001 C CNN
 F 4 "Header for I2S Debug" H 4600 1100 50  0001 C CNN "Description"
 	1    4600 1100
@@ -1579,11 +1573,11 @@ Wire Wire Line
 	4350 1350 4350 1300
 Wire Wire Line
 	4350 1300 4400 1300
-Text Label 4350 1100 2    50   ~ 0
-I2S_CK
 Text Label 4350 1000 2    50   ~ 0
-I2S_WS
+I2S_CK
 Text Label 4350 1200 2    50   ~ 0
+I2S_WS
+Text Label 4350 1100 2    50   ~ 0
 I2S_SD
 Wire Wire Line
 	4350 1000 4400 1000
@@ -1657,12 +1651,12 @@ Wire Wire Line
 $Comp
 L Device:R_Small R31
 U 1 1 61277C8A
-P 3500 4950
-F 0 "R31" V 3435 4945 50  0000 C CNN
-F 1 "470" V 3570 4945 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 4950 50  0001 C CNN
-F 3 "~" H 3500 4950 50  0001 C CNN
-	1    3500 4950
+P 3500 4450
+F 0 "R31" V 3435 4445 50  0000 C CNN
+F 1 "470" V 3570 4445 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3500 4450 50  0001 C CNN
+F 3 "~" H 3500 4450 50  0001 C CNN
+	1    3500 4450
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1692,7 +1686,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 3950 3650 3950
 Wire Wire Line
-	3650 4950 3600 4950
+	3650 4450 3600 4450
 Wire Wire Line
 	7200 5000 7250 5000
 Wire Wire Line
@@ -1981,10 +1975,8 @@ Wire Wire Line
 	10300 900  10300 850 
 Wire Wire Line
 	10300 1150 10300 1100
-Text HLabel 3350 3350 2    50   Output ~ 0
+Text HLabel 3400 1850 2    50   Output ~ 0
 SPI_INT
-Wire Wire Line
-	3350 3350 3250 3350
 $Comp
 L Switch:SW_Push_Dual SW5
 U 1 1 61C558B8
@@ -2365,14 +2357,19 @@ F 3 "" H 7850 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3VDAC #PWR?
+L power:+3.3VDAC #PWR0103
 U 1 1 607E677E
 P 9600 4150
-F 0 "#PWR?" H 9750 4100 50  0001 C CNN
+F 0 "#PWR0103" H 9750 4100 50  0001 C CNN
 F 1 "+3.3VDAC" H 9620 4293 50  0000 C CNN
 F 2 "" H 9600 4150 50  0001 C CNN
 F 3 "" H 9600 4150 50  0001 C CNN
 	1    9600 4150
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3250 5650
+NoConn ~ 3250 4950
+Wire Wire Line
+	3400 1850 3250 1850
+NoConn ~ 3250 3350
 $EndSCHEMATC
