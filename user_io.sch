@@ -237,76 +237,37 @@ USR_PUSHBTN
 Wire Wire Line
 	2800 2600 2650 2600
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J3
-U 1 1 61020F75
-P 6800 1200
-F 0 "J3" H 6850 1500 50  0000 C CNN
-F 1 "Conn_02x05_Odd_Even" H 7000 900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 6800 1200 50  0001 C CNN
-F 3 "~" H 6800 1200 50  0001 C CNN
-F 4 "STLink header for programming/debugging" H 6800 1200 50  0001 C CNN "Description"
-	1    6800 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR028
 U 1 1 6102234A
-P 6500 1450
-F 0 "#PWR028" H 6500 1200 50  0001 C CNN
-F 1 "GND" H 6505 1277 50  0000 C CNN
-F 2 "" H 6500 1450 50  0001 C CNN
-F 3 "" H 6500 1450 50  0001 C CNN
-	1    6500 1450
+P 7250 1950
+F 0 "#PWR028" H 7250 1700 50  0001 C CNN
+F 1 "GND" H 7100 1900 50  0000 C CNN
+F 2 "" H 7250 1950 50  0001 C CNN
+F 3 "" H 7250 1950 50  0001 C CNN
+	1    7250 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 1450 6500 1400
-Wire Wire Line
-	6500 1400 6600 1400
-Wire Wire Line
-	6500 1400 6500 1200
-Wire Wire Line
-	6500 1200 6600 1200
-Connection ~ 6500 1400
-Wire Wire Line
-	6500 1200 6500 1100
-Wire Wire Line
-	6500 1100 6600 1100
-Connection ~ 6500 1200
 $Comp
 L power:+3.3V #PWR027
 U 1 1 61024D4E
-P 6500 950
-F 0 "#PWR027" H 6500 800 50  0001 C CNN
-F 1 "+3.3V" H 6515 1123 50  0000 C CNN
-F 2 "" H 6500 950 50  0001 C CNN
-F 3 "" H 6500 950 50  0001 C CNN
-	1    6500 950 
+P 6650 950
+F 0 "#PWR027" H 6650 800 50  0001 C CNN
+F 1 "+3.3V" H 6665 1123 50  0000 C CNN
+F 2 "" H 6650 950 50  0001 C CNN
+F 3 "" H 6650 950 50  0001 C CNN
+	1    6650 950 
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6500 950  6500 1000
-Wire Wire Line
-	6500 1000 6600 1000
-NoConn ~ 6600 1300
-NoConn ~ 7100 1300
-NoConn ~ 7100 1200
 Text Label 1300 2600 2    50   ~ 0
 NRST
 Wire Wire Line
 	1300 2600 1450 2600
-Text Label 7200 1400 0    50   ~ 0
+Text Label 6700 1700 2    50   ~ 0
 NRST
-Wire Wire Line
-	7200 1400 7100 1400
-Text Label 7200 1000 0    50   ~ 0
+Text Label 6700 1300 2    50   ~ 0
 SWDIO
-Text Label 7200 1100 0    50   ~ 0
+Text Label 6700 1400 2    50   ~ 0
 SWCLK
-Wire Wire Line
-	7200 1100 7100 1100
-Wire Wire Line
-	7100 1000 7200 1000
 $Comp
 L Device:C_Small C10
 U 1 1 61038A41
@@ -625,8 +586,6 @@ Wire Notes Line
 	5400 2150 5400 4600
 Text Notes 5400 2150 0    50   ~ 0
 Reset/Boot Circuitry
-Wire Notes Line
-	6400 1650 7450 1650
 Wire Notes Line
 	7450 1650 7450 700 
 Wire Notes Line
@@ -1548,4 +1507,56 @@ Wire Wire Line
 	9450 2700 10050 2700
 Wire Wire Line
 	9450 2600 10050 2600
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J3
+U 1 1 606691DA
+P 6900 1400
+F 0 "J3" H 6950 2017 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" V 7300 1350 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x10_P1.27mm_Vertical" H 6900 1400 50  0001 C CNN
+F 3 "~" H 6900 1400 50  0001 C CNN
+	1    6900 1400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6700 1500
+NoConn ~ 6700 1600
+NoConn ~ 6700 1800
+NoConn ~ 6700 1900
+NoConn ~ 6700 1100
+NoConn ~ 6700 1200
+Wire Wire Line
+	6650 950  6650 1000
+Wire Wire Line
+	6650 1000 6700 1000
+Wire Wire Line
+	7250 1950 7250 1900
+Wire Wire Line
+	7250 1900 7200 1900
+Wire Wire Line
+	7200 1900 7200 1800
+Connection ~ 7200 1900
+Connection ~ 7200 1100
+Wire Wire Line
+	7200 1100 7200 1000
+Connection ~ 7200 1200
+Wire Wire Line
+	7200 1200 7200 1100
+Connection ~ 7200 1300
+Wire Wire Line
+	7200 1300 7200 1200
+Connection ~ 7200 1400
+Wire Wire Line
+	7200 1400 7200 1300
+Connection ~ 7200 1500
+Wire Wire Line
+	7200 1500 7200 1400
+Connection ~ 7200 1600
+Wire Wire Line
+	7200 1600 7200 1500
+Connection ~ 7200 1700
+Wire Wire Line
+	7200 1700 7200 1600
+Connection ~ 7200 1800
+Wire Wire Line
+	7200 1800 7200 1700
 $EndSCHEMATC
