@@ -1,0 +1,8 @@
+** Drc report for /home/cooper/school/senior_design/digidraw/digidraw.kicad_pcb **
+** Created on 2021-03-19 17:30:38 **
+
+** Found 0 DRC errors **
+
+** Found 0 unconnected pads **
+
+** End of Report **
