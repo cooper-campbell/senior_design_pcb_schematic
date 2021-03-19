@@ -201,8 +201,6 @@ Wire Wire Line
 	2650 5700 2750 5700
 Wire Wire Line
 	2650 5800 2750 5800
-Wire Wire Line
-	1300 5100 1450 5100
 Text Notes 7900 2150 0    50   ~ 0
 RA8875 Connector
 Text Notes 6650 7750 0    50   ~ 10
@@ -239,12 +237,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR028
 U 1 1 6102234A
-P 7250 1950
-F 0 "#PWR028" H 7250 1700 50  0001 C CNN
-F 1 "GND" H 7100 1900 50  0000 C CNN
-F 2 "" H 7250 1950 50  0001 C CNN
-F 3 "" H 7250 1950 50  0001 C CNN
-	1    7250 1950
+P 6650 1450
+F 0 "#PWR028" H 6650 1200 50  0001 C CNN
+F 1 "GND" H 6500 1400 50  0000 C CNN
+F 2 "" H 6650 1450 50  0001 C CNN
+F 3 "" H 6650 1450 50  0001 C CNN
+	1    6650 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -262,11 +260,11 @@ Text Label 1300 2600 2    50   ~ 0
 NRST
 Wire Wire Line
 	1300 2600 1450 2600
-Text Label 6700 1700 2    50   ~ 0
+Text Label 7200 1400 0    50   ~ 0
 NRST
-Text Label 6700 1300 2    50   ~ 0
+Text Label 7200 1000 0    50   ~ 0
 SWDIO
-Text Label 6700 1400 2    50   ~ 0
+Text Label 7200 1100 0    50   ~ 0
 SWCLK
 $Comp
 L Device:C_Small C10
@@ -476,8 +474,6 @@ Wire Wire Line
 	2050 6000 2150 6000
 Text Label 5900 3700 2    50   ~ 0
 NRST
-Wire Wire Line
-	5900 3700 5900 3800
 $Comp
 L power:GND #PWR024
 U 1 1 6052AD9F
@@ -514,9 +510,6 @@ F 3 "~" H 6200 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5900 3800 6000 3800
-Connection ~ 5900 3800
-Wire Wire Line
 	6350 3800 6350 3700
 $Comp
 L Device:C_Small C8
@@ -533,11 +526,7 @@ $EndComp
 Wire Wire Line
 	5650 4100 5650 4200
 Wire Wire Line
-	5650 4200 5800 4200
-Wire Wire Line
 	5650 3900 5650 3800
-Wire Wire Line
-	5650 3800 5800 3800
 Text Label 2800 3500 0    50   ~ 0
 USART_TX
 Wire Wire Line
@@ -587,11 +576,7 @@ Wire Notes Line
 Text Notes 5400 2150 0    50   ~ 0
 Reset/Boot Circuitry
 Wire Notes Line
-	7450 1650 7450 700 
-Wire Notes Line
 	7450 700  6400 700 
-Wire Notes Line
-	6400 700  6400 1650
 Text Notes 6400 700  0    50   ~ 0
 Debug Connector\n
 Wire Notes Line
@@ -611,7 +596,7 @@ NoConn ~ 2650 3200
 NoConn ~ 2650 3700
 NoConn ~ 2650 3800
 NoConn ~ 2650 4100
-NoConn ~ 2650 4500
+NoConn ~ 2650 4400
 NoConn ~ 2650 4600
 NoConn ~ 2650 4700
 NoConn ~ 2650 4800
@@ -626,8 +611,8 @@ NoConn ~ 1450 5500
 NoConn ~ 1450 5400
 NoConn ~ 1450 5300
 NoConn ~ 1450 5200
-NoConn ~ 1450 5000
-NoConn ~ 1450 4900
+NoConn ~ 2650 4300
+NoConn ~ 1450 5100
 NoConn ~ 1450 4800
 NoConn ~ 1450 4700
 NoConn ~ 1450 4600
@@ -639,10 +624,6 @@ NoConn ~ 1450 3900
 NoConn ~ 1450 3800
 NoConn ~ 1450 3700
 NoConn ~ 1450 3600
-Wire Wire Line
-	2800 4400 2650 4400
-Wire Wire Line
-	2650 4300 2800 4300
 Text Label 8050 2900 0    50   ~ 0
 RA8875_WAIT
 Text Label 8600 2900 0    50   ~ 0
@@ -749,10 +730,10 @@ Wire Wire Line
 	7800 4750 7850 4750
 Wire Wire Line
 	7800 4650 7850 4650
-Text Label 2800 3400 0    50   ~ 0
+Text Label 2800 4500 0    50   ~ 0
 SUBS_P_INT
 Wire Wire Line
-	2650 3400 2800 3400
+	2650 4500 2800 4500
 $Comp
 L Connector:Conn_01x05_Male J5
 U 1 1 6060D4E1
@@ -896,7 +877,7 @@ Wire Wire Line
 	7050 5000 7050 4950
 Wire Wire Line
 	7050 4950 7100 4950
-Text Label 1300 5100 2    50   ~ 0
+Text Label 2650 3400 0    50   ~ 0
 RA8875_NRST
 Text Label 2750 5500 0    50   ~ 0
 RA8875_NSS
@@ -906,9 +887,9 @@ Text Label 2750 5700 0    50   ~ 0
 RA8875_MISO
 Text Label 2750 5600 0    50   ~ 0
 RA8875_SCK
-Text Label 2800 4300 0    50   ~ 0
+Text Label 1450 5000 2    50   ~ 0
 RA8875_INT
-Text Label 2800 4400 0    50   ~ 0
+Text Label 1450 4900 2    50   ~ 0
 RA8875_WAIT
 $Comp
 L power:GND #PWR051
@@ -1165,26 +1146,10 @@ Wire Notes Line
 	6550 4150 10350 4150
 Wire Notes Line
 	6550 5300 10350 5300
-$Comp
-L Switch:SW_Push_Dual SW2
-U 1 1 60A9B835
-P 6050 2700
-F 0 "SW2" H 5900 2800 50  0000 L CNN
-F 1 "SW_Push_Dual" H 5700 2900 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_EVPBF" H 6050 2900 50  0001 C CNN
-F 3 "~" H 6050 2900 50  0001 C CNN
-F 4 "Pushbuttons for NRST/BOOT" H 6050 2700 50  0001 C CNN "Description"
-	1    6050 2700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5700 3250 5700 3200
 Wire Wire Line
-	6050 2950 6050 2900
-Wire Wire Line
 	5700 2950 5700 3000
-Wire Wire Line
-	5850 2950 5850 2900
 $Comp
 L power:+3.3V #PWR025
 U 1 1 60B5AC9E
@@ -1198,9 +1163,6 @@ F 3 "" H 6050 2450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6050 2450 6050 2500
-Wire Wire Line
-	6050 2500 5850 2500
-Connection ~ 6050 2500
 $Comp
 L Device:C_Small C9
 U 1 1 60B786CA
@@ -1214,47 +1176,12 @@ F 4 "3.3 V" H 5700 2700 50  0001 C CNN "Min Voltage Rating"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5850 2950 5700 2950
-Wire Wire Line
 	5700 2950 5700 2800
-Connection ~ 5850 2950
 Wire Wire Line
 	5700 2600 5700 2500
-Wire Wire Line
-	5700 2500 5850 2500
-Connection ~ 5850 2500
-$Comp
-L Switch:SW_Push_Dual SW1
-U 1 1 60BBAAA3
-P 6000 4000
-F 0 "SW1" H 6000 4100 50  0000 L CNN
-F 1 "SW_Push_Dual" H 5850 4200 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_EVPBF" H 6000 4200 50  0001 C CNN
-F 3 "~" H 6000 4200 50  0001 C CNN
-F 4 "Pushbuttons for NRST/BOOT" H 6000 4000 50  0001 C CNN "Description"
-	1    6000 4000
-	0    1    1    0   
-$EndComp
-Connection ~ 6000 3800
-Connection ~ 5800 3800
-Wire Wire Line
-	5800 3800 5900 3800
-Connection ~ 5800 4200
-Wire Wire Line
-	5800 4200 5900 4200
-Connection ~ 5900 4200
-Wire Wire Line
-	5900 4200 6000 4200
 Connection ~ 5700 2950
 Wire Wire Line
-	5850 2950 6050 2950
-Wire Wire Line
 	6150 3000 6150 2950
-Wire Wire Line
-	6150 2950 6050 2950
-Connection ~ 6050 2950
-Wire Wire Line
-	6000 3800 6100 3800
 Wire Wire Line
 	6300 3800 6350 3800
 $Comp
@@ -1356,18 +1283,6 @@ Wire Notes Line
 	6550 3250 6550 4050
 Wire Notes Line
 	7850 4050 7850 3250
-$Comp
-L Switch:SW_Push_Dual SW3
-U 1 1 60FDEA1B
-P 6100 1200
-F 0 "SW3" H 6100 1300 50  0000 L CNN
-F 1 "SW_Push_Dual" H 5800 1400 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_EVPBF" H 6100 1400 50  0001 C CNN
-F 3 "~" H 6100 1400 50  0001 C CNN
-F 4 "User push button" H 6100 1200 50  0001 C CNN "Description"
-	1    6100 1200
-	0    1    1    0   
-$EndComp
 Text Label 5650 1400 3    50   ~ 0
 USR_PUSHBTN
 $Comp
@@ -1416,12 +1331,10 @@ $EndComp
 Wire Wire Line
 	5900 1700 5900 1650
 Wire Wire Line
-	6100 1400 5900 1400
-Wire Wire Line
 	5650 1000 5900 1000
 Connection ~ 5900 1000
 Wire Wire Line
-	5900 1000 6100 1000
+	5900 1000 5950 1000
 $Comp
 L power:+3.3V #PWR022
 U 1 1 6103A803
@@ -1507,56 +1420,114 @@ Wire Wire Line
 	9450 2700 10050 2700
 Wire Wire Line
 	9450 2600 10050 2600
-$Comp
-L Connector_Generic:Conn_02x10_Odd_Even J3
-U 1 1 606691DA
-P 6900 1400
-F 0 "J3" H 6950 2017 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" V 7300 1350 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x10_P1.27mm_Vertical" H 6900 1400 50  0001 C CNN
-F 3 "~" H 6900 1400 50  0001 C CNN
-	1    6900 1400
-	1    0    0    -1  
-$EndComp
-NoConn ~ 6700 1500
-NoConn ~ 6700 1600
-NoConn ~ 6700 1800
-NoConn ~ 6700 1900
-NoConn ~ 6700 1100
-NoConn ~ 6700 1200
 Wire Wire Line
 	6650 950  6650 1000
 Wire Wire Line
 	6650 1000 6700 1000
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J3
+U 1 1 607A450C
+P 6900 1200
+F 0 "J3" H 6950 1617 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 6950 1526 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 6900 1200 50  0001 C CNN
+F 3 "~" H 6900 1200 50  0001 C CNN
+	1    6900 1200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7200 1200
+NoConn ~ 7200 1300
+NoConn ~ 6700 1300
 Wire Wire Line
-	7250 1950 7250 1900
+	6700 1100 6650 1100
 Wire Wire Line
-	7250 1900 7200 1900
+	6650 1100 6650 1200
 Wire Wire Line
-	7200 1900 7200 1800
-Connection ~ 7200 1900
-Connection ~ 7200 1100
+	6700 1400 6650 1400
+Connection ~ 6650 1400
 Wire Wire Line
-	7200 1100 7200 1000
-Connection ~ 7200 1200
+	6650 1400 6650 1450
 Wire Wire Line
-	7200 1200 7200 1100
-Connection ~ 7200 1300
+	6700 1200 6650 1200
+Connection ~ 6650 1200
 Wire Wire Line
-	7200 1300 7200 1200
-Connection ~ 7200 1400
+	6650 1200 6650 1400
+Wire Notes Line
+	7450 2050 6400 2050
+Wire Notes Line
+	7450 700  7450 2050
+Wire Notes Line
+	6400 700  6400 2050
 Wire Wire Line
-	7200 1400 7200 1300
-Connection ~ 7200 1500
+	5650 3800 5850 3800
 Wire Wire Line
-	7200 1500 7200 1400
-Connection ~ 7200 1600
+	5650 4200 5850 4200
+$Comp
+L Connector:Conn_01x02_Male J14
+U 1 1 605F435C
+P 6100 2750
+F 0 "J14" H 6072 2632 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 5950 3200 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6100 2750 50  0001 C CNN
+F 3 "~" H 6100 2750 50  0001 C CNN
+	1    6100 2750
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	7200 1600 7200 1500
-Connection ~ 7200 1700
+	5850 4050 5850 4200
+Connection ~ 5850 4200
 Wire Wire Line
-	7200 1700 7200 1600
-Connection ~ 7200 1800
+	5850 4200 5900 4200
 Wire Wire Line
-	7200 1800 7200 1700
+	5850 3950 5850 3800
+Connection ~ 5850 3800
+Wire Wire Line
+	5700 2500 5900 2500
+Wire Wire Line
+	5700 2950 5900 2950
+Wire Wire Line
+	5900 2650 5900 2500
+Connection ~ 5900 2500
+Wire Wire Line
+	5900 2500 6050 2500
+Wire Wire Line
+	5900 2750 5900 2950
+Connection ~ 5900 2950
+$Comp
+L Connector:Conn_01x02_Male J15
+U 1 1 60625B17
+P 6150 1250
+F 0 "J15" H 6122 1132 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 6000 1700 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6150 1250 50  0001 C CNN
+F 3 "~" H 6150 1250 50  0001 C CNN
+	1    6150 1250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 1150 5950 1000
+Wire Wire Line
+	5950 1250 5950 1400
+Wire Wire Line
+	5950 1400 5900 1400
+Wire Wire Line
+	5900 2950 6150 2950
+Wire Wire Line
+	5850 3800 5900 3800
+Wire Wire Line
+	5900 3800 5900 3700
+Connection ~ 5900 3800
+Wire Wire Line
+	5900 3800 6100 3800
+$Comp
+L Connector:Conn_01x02_Male J19
+U 1 1 606F3729
+P 6050 4050
+F 0 "J19" H 6022 3932 50  0000 R CNN
+F 1 "Conn_01x02_Male" V 5900 4500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 4050 50  0001 C CNN
+F 3 "~" H 6050 4050 50  0001 C CNN
+	1    6050 4050
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
