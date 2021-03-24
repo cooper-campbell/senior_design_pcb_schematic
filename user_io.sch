@@ -22,6 +22,7 @@ F 1 "STM32F051R8T6" H 2550 2450 50  0000 C CNN
 F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 1550 2500 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00039193.pdf" H 2050 4200 50  0001 C CNN
 F 4 "F0 processor for User IO" H 2050 4200 50  0001 C CNN "Description"
+F 5 "STM32F051R8T6" H 2050 4200 50  0001 C CNN "Digi-Key_PN"
 	1    2050 4200
 	1    0    0    -1  
 $EndComp
@@ -64,6 +65,7 @@ F 1 "CAT24C256" H 7800 1650 50  0000 C CNN
 F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 8100 1400 50  0001 C CNN
 F 3 "https://www.onsemi.cn/PowerSolutions/document/CAT24C256-D.PDF" H 8100 1400 50  0001 C CNN
 F 4 "EEPROM for storage" H 8100 1400 50  0001 C CNN "Description"
+F 5 "CAT24C256YI-GT3" H 8100 1400 50  0001 C CNN "Digi-Key_PN"
 	1    8100 1400
 	1    0    0    -1  
 $EndComp
@@ -1387,6 +1389,7 @@ F 1 "8MHz" H 6850 3600 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_Abracon_ABM10-4Pin_2.5x2.0mm" H 7100 3500 50  0001 C CNN
 F 3 "~" H 7100 3500 50  0001 C CNN
 F 4 "HSE crystals" H 7100 3500 50  0001 C CNN "Description"
+F 5 "ASDDV-8.000MHZ-LR-T" H 7100 3500 50  0001 C CNN "Digi-Key_PN"
 	1    7100 3500
 	1    0    0    -1  
 $EndComp

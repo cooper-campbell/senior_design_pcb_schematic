@@ -42,6 +42,7 @@ F 1 "Barrel_Jack" H 5657 1634 50  0000 C CNN
 F 2 "digikey-footprints:Barrel_Jack_5.5mmODx2.1mmID_PJ-202A" H 5650 1360 50  0001 C CNN
 F 3 "~" H 5650 1360 50  0001 C CNN
 F 4 "Barrel jack for power (maybe)" H 5600 1400 50  0001 C CNN "Description"
+F 5 "PJ-202A" H 5600 1400 50  0001 C CNN "Digi-Key_PN"
 	1    5600 1400
 	1    0    0    -1  
 $EndComp
@@ -179,6 +180,7 @@ F 1 "USB_B_Micro" H 4107 1676 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 4200 1250 50  0001 C CNN
 F 3 "~" H 4200 1250 50  0001 C CNN
 F 4 "USB B micro for power" H 4050 1300 50  0001 C CNN "Description"
+F 5 "105017-0001" H 4050 1300 50  0001 C CNN "Digi-Key_PN"
 	1    4050 1300
 	1    0    0    -1  
 $EndComp
@@ -306,22 +308,8 @@ Wire Wire Line
 	4400 1100 4350 1100
 Wire Wire Line
 	3050 5950 2250 5950
-$Comp
-L Device:Fuse_Small F1
-U 1 1 60805B60
-P 1200 2950
-F 0 "F1" H 1200 3135 50  0000 C CNN
-F 1 "3" H 1200 3044 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric" H 1200 2950 50  0001 C CNN
-F 3 "~" H 1200 2950 50  0001 C CNN
-F 4 "Input current fuse" H 1200 2950 50  0001 C CNN "Description"
-	1    1200 2950
-	1    0    0    -1  
-$EndComp
 Text Label 950  2950 1    50   ~ 0
 VIN
-Wire Wire Line
-	950  2950 1100 2950
 $Comp
 L Device:C_Small C1
 U 1 1 60807337
@@ -336,8 +324,6 @@ F 4 "16 V" H 1400 3150 50  0001 C CNN "Min Voltage Rating"
 $EndComp
 Wire Wire Line
 	1400 3050 1400 2950
-Wire Wire Line
-	1400 2950 1300 2950
 $Comp
 L power:GND #PWR01
 U 1 1 6080810A
@@ -372,6 +358,7 @@ F 1 "9.1" V 2945 3218 50  0000 L CNN
 F 2 "Diode_SMD:D_0603_1608Metric" V 2900 3150 50  0001 C CNN
 F 3 "~" V 2900 3150 50  0001 C CNN
 F 4 "Debug LED" H 2900 3150 50  0001 C CNN "Description"
+F 5 "CDBU0320" H 2900 3150 50  0001 C CNN "Digi-Key_PN"
 	1    2900 3150
 	0    1    1    0   
 $EndComp
@@ -491,6 +478,7 @@ F 29 "Buck-Boost" H 4500 6050 50  0001 L CNN "switching topology"
 F 30 "+125°C" H 4500 6150 50  0001 L CNN "temperature range high"
 F 31 "-40°C" H 4500 6250 50  0001 L CNN "temperature range low"
 F 32 "Buck/boost converter" H 4500 2950 50  0001 C CNN "Description"
+F 33 "TPS63070RNMR" H 4500 2950 50  0001 C CNN "Digi-Key_PN"
 	1    4500 2950
 	1    0    0    -1  
 $EndComp
@@ -569,9 +557,10 @@ U 1 1 60899EAB
 P 4500 3400
 F 0 "L1" H 4600 3350 50  0000 R CNN
 F 1 "1.5u" H 4700 3450 50  0000 R CNN
-F 2 "Inductor_SMD:L_0603_1608Metric" H 4500 3400 50  0001 C CNN
+F 2 "custom_fp:InductorWEPD" H 4500 3400 50  0001 C CNN
 F 3 "~" H 4500 3400 50  0001 C CNN
 F 4 "Buck/Boost converter inductor" H 4500 3400 50  0001 C CNN "Description"
+F 5 "7447707015" H 4500 3400 50  0001 C CNN "Digi-Key_PN"
 	1    4500 3400
 	-1   0    0    1   
 $EndComp
@@ -995,6 +984,7 @@ F 31 "-1.6V" H 2400 6750 50  0001 L CNN "threshold vgs"
 F 32 "19ns" H 2400 6850 50  0001 L CNN "turn off delay time"
 F 33 "7ns" H 2400 6950 50  0001 L CNN "turn on delay time"
 F 34 "MOSFET for bias protection" H 2400 3350 50  0001 C CNN "Description"
+F 35 "FDD5614P" H 2400 3350 50  0001 C CNN "Digi-Key_PN"
 	1    2400 3350
 	0    -1   -1   0   
 $EndComp
@@ -1036,6 +1026,7 @@ F 3 "" H 8500 5050 50  0001 L BNN
 F 4 "CUI INC" H 8500 5050 50  0001 L BNN "MANUFACTURER"
 F 5 "1.03" H 8500 5050 50  0001 L BNN "PARTREV"
 F 6 "MANUFACTURER RECOMMENDATIONS" H 8500 5050 50  0001 L BNN "STANDARD"
+F 7 "V7803-1500R" H 8500 5050 50  0001 C CNN "Digi-Key_PN"
 	1    8500 5050
 	1    0    0    -1  
 $EndComp
@@ -1113,9 +1104,10 @@ L Device:L_Small L2
 U 1 1 60653459
 P 9550 4950
 F 0 "L2" V 9369 4950 50  0000 C CNN
-F 1 "L_Small" V 9460 4950 50  0000 C CNN
+F 1 "10u" V 9460 4950 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" H 9550 4950 50  0001 C CNN
 F 3 "~" H 9550 4950 50  0001 C CNN
+F 4 "MLZ1608E100MT" H 9550 4950 50  0001 C CNN "Digi-Key_PN"
 	1    9550 4950
 	0    1    1    0   
 $EndComp
@@ -1161,6 +1153,7 @@ F 0 "U8" H 8600 4138 60  0000 C CNN
 F 1 "LM317KCS" H 8600 4032 60  0000 C CNN
 F 2 "lm317_ti:LM317KCS" H 8600 3590 60  0001 C CNN
 F 3 "" H 8600 3650 60  0000 C CNN
+F 4 "LM317KCS" H 8600 3650 50  0001 C CNN "Digi-Key_PN"
 	1    8600 3650
 	1    0    0    -1  
 $EndComp
@@ -1195,6 +1188,7 @@ F 0 "D2" V 8989 1583 50  0000 R CNN
 F 1 "LED" V 8898 1583 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 8950 1700 50  0001 C CNN
 F 3 "~" H 8950 1700 50  0001 C CNN
+F 4 "AA1608SURSK" H 8950 1700 50  0001 C CNN "Digi-Key_PN"
 	1    8950 1700
 	0    -1   -1   0   
 $EndComp
@@ -1206,6 +1200,7 @@ F 0 "D3" V 9289 1583 50  0000 R CNN
 F 1 "LED" V 9198 1583 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 9250 1700 50  0001 C CNN
 F 3 "~" H 9250 1700 50  0001 C CNN
+F 4 "AA1608SURSK" H 9250 1700 50  0001 C CNN "Digi-Key_PN"
 	1    9250 1700
 	0    -1   -1   0   
 $EndComp
@@ -1283,4 +1278,6 @@ F 3 "" H 9250 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9250 2150 9250 2100
+Wire Wire Line
+	950  2950 1400 2950
 $EndSCHEMATC

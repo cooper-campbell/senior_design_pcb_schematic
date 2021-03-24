@@ -13,18 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_ST_STM32F4:STM32F407VGTx U5
-U 1 1 6045816F
-P 2350 3650
-F 0 "U5" H 1950 1000 50  0000 C CNN
-F 1 "STM32F407VGT6" H 2900 1000 50  0000 C CNN
-F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 1650 1050 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 2350 3650 50  0001 C CNN
-F 4 "F4 processor for DAC/MIDI subsystem" H 2350 3650 50  0001 C CNN "Description"
-	1    2350 3650
-	1    0    0    -1  
-$EndComp
 Text HLabel 3400 1950 2    50   Input ~ 0
 SPI_MOSI
 Text HLabel 3400 1750 2    50   Input ~ 0
@@ -54,37 +42,11 @@ F 3 "" H 2350 6600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 6450 2250 6450
-Wire Wire Line
 	2350 6450 2350 6600
 Connection ~ 2350 6450
-Connection ~ 2250 6450
-Wire Wire Line
-	2250 6450 2350 6450
-Wire Wire Line
-	2550 6450 2450 6450
-Connection ~ 2450 6450
-Wire Wire Line
-	2450 6450 2350 6450
-Wire Wire Line
-	2050 950  2150 950 
 Wire Wire Line
 	2350 950  2350 750 
 Connection ~ 2350 950 
-Connection ~ 2150 950 
-Wire Wire Line
-	2150 950  2250 950 
-Connection ~ 2250 950 
-Wire Wire Line
-	2250 950  2350 950 
-Connection ~ 2450 950 
-Wire Wire Line
-	2450 950  2350 950 
-Connection ~ 2550 950 
-Wire Wire Line
-	2550 950  2450 950 
-Wire Wire Line
-	2650 950  2550 950 
 $Comp
 L Device:C_Small C25
 U 1 1 604CB2D1
@@ -355,11 +317,6 @@ Text Label 1300 1850 2    50   ~ 0
 VREF+
 Wire Wire Line
 	1300 1850 1450 1850
-Text Label 2900 950  0    50   ~ 0
-VREF+
-Wire Wire Line
-	2900 950  2750 950 
-Connection ~ 2750 950 
 $Comp
 L Device:C_Small C20
 U 1 1 605175AA
@@ -578,6 +535,7 @@ F 1 "PCM5102" H 7400 5950 50  0000 C CNN
 F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 7700 6150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/pcm5102.pdf" H 7700 6150 50  0001 C CNN
 F 4 "DAC for output" H 7750 5400 50  0001 C CNN "Description"
+F 5 "PCM5102APWR" H 7750 5400 50  0001 C CNN "Digi-Key_PN"
 	1    7750 5400
 	1    0    0    -1  
 $EndComp
@@ -589,8 +547,6 @@ Wire Wire Line
 	3250 3950 3400 3950
 Text Label 3650 4150 0    50   ~ 0
 I2S_WS
-Wire Wire Line
-	7650 4700 7650 4800
 $Comp
 L Device:C_Small C43
 U 1 1 604CDE68
@@ -760,7 +716,7 @@ Wire Wire Line
 Wire Wire Line
 	7850 6200 7850 6100
 Wire Wire Line
-	7850 4700 7850 4800
+	7850 4700 7850 4750
 Text Label 8450 3850 2    50   ~ 0
 OUTL
 Text Label 10300 3850 0    50   ~ 0
@@ -819,8 +775,6 @@ Text Label 9550 3850 1    50   ~ 0
 ANALOG_R
 Wire Wire Line
 	10000 3900 10000 3850
-Text Label 9200 4200 2    50   ~ 0
-AVDD
 Wire Wire Line
 	9600 4200 9400 4200
 $Comp
@@ -851,9 +805,6 @@ Wire Wire Line
 	9600 4200 9600 4250
 Wire Wire Line
 	9400 4200 9400 4250
-Connection ~ 9400 4200
-Wire Wire Line
-	9400 4200 9200 4200
 $Comp
 L power:GND #PWR090
 U 1 1 605F900B
@@ -934,29 +885,6 @@ Wire Wire Line
 Text Label 3400 1250 0    50   ~ 0
 UART4_TX
 $Comp
-L Connector:Conn_01x04_Male J13
-U 1 1 60921649
-P 6350 1200
-F 0 "J13" H 6450 900 50  0000 R CNN
-F 1 "Conn_01x04_Male" V 6300 1450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6350 1200 50  0001 C CNN
-F 3 "~" H 6350 1200 50  0001 C CNN
-F 4 "Header for UART Debug" H 6350 1200 50  0001 C CNN "Description"
-	1    6350 1200
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR074
-U 1 1 60923553
-P 6100 950
-F 0 "#PWR074" H 6100 800 50  0001 C CNN
-F 1 "+3.3V" H 6115 1123 50  0000 C CNN
-F 2 "" H 6100 950 50  0001 C CNN
-F 3 "" H 6100 950 50  0001 C CNN
-	1    6100 950 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR075
 U 1 1 6092403B
 P 6100 1350
@@ -967,10 +895,6 @@ F 3 "" H 6100 1350 50  0001 C CNN
 	1    6100 1350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6100 950  6100 1000
-Wire Wire Line
-	6100 1000 6150 1000
 Wire Wire Line
 	6150 1300 6100 1300
 Wire Wire Line
@@ -997,10 +921,10 @@ Text Label 3400 2150 0    50   ~ 0
 USB_FS_VBUS
 Wire Wire Line
 	3400 2150 3250 2150
-Text Label 3400 2250 0    50   ~ 0
+Text Label 3400 2050 0    50   ~ 0
 USB_VBUS_EN
 Wire Wire Line
-	3400 2250 3250 2250
+	3400 2050 3250 2050
 $Comp
 L digidraw-rescue:STMPS2141STR-DIGIKEY_POWER_SWITCH U7
 U 1 1 609C4170
@@ -1058,7 +982,7 @@ Text Label 9800 1200 1    50   ~ 0
 USB_FAULT
 Text Label 10250 1400 3    50   ~ 0
 USB_POWER
-Text Label 10350 1400 3    50   ~ 0
+Text Label 10250 1900 2    50   ~ 0
 USB_FS_VBUS
 Wire Wire Line
 	9550 1150 9550 1200
@@ -1089,6 +1013,7 @@ F 1 "USB_A" H 4820 2388 50  0000 R CNN
 F 2 "Connector_USB:USB_A_Molex_67643_Horizontal" H 5200 2350 50  0001 C CNN
 F 3 " ~" H 5200 2350 50  0001 C CNN
 F 4 "Connector for USB Midi" H 5050 2400 50  0001 C CNN "Description"
+F 5 "67643-3910" H 5050 2400 50  0001 C CNN "Digi-Key_PN"
 	1    5050 2400
 	1    0    0    -1  
 $EndComp
@@ -1096,9 +1021,9 @@ Text Label 5500 2200 0    50   ~ 0
 USB_POWER
 Wire Wire Line
 	5500 2200 5350 2200
-Text Label 5700 2400 0    50   ~ 0
+Text Label 5650 5250 0    50   ~ 0
 USB_FS_DP
-Text Label 5700 2500 0    50   ~ 0
+Text Label 4450 5250 2    50   ~ 0
 USB_FS_DM
 $Comp
 L power:GND #PWR070
@@ -1113,11 +1038,6 @@ F 3 "" H 5050 2850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 2850 5050 2800
-Wire Wire Line
-	4950 2800 4950 2850
-Wire Wire Line
-	4950 2850 5050 2850
-Connection ~ 5050 2850
 Text Label 7200 5100 2    50   ~ 0
 I2S_SD
 Wire Wire Line
@@ -1266,7 +1186,7 @@ Text Notes 4400 2050 0    50   ~ 0
 Output Connectors\n
 NoConn ~ 3250 1450
 NoConn ~ 3250 1550
-NoConn ~ 3250 2050
+NoConn ~ 3250 2250
 NoConn ~ 3250 4650
 NoConn ~ 3250 2750
 NoConn ~ 3250 2950
@@ -1294,7 +1214,7 @@ NoConn ~ 3250 6150
 NoConn ~ 1450 5750
 NoConn ~ 1450 5650
 NoConn ~ 1450 5550
-NoConn ~ 1450 5450
+NoConn ~ 1450 4350
 NoConn ~ 1450 5350
 NoConn ~ 1450 5250
 NoConn ~ 1450 5150
@@ -1401,22 +1321,6 @@ Wire Notes Line
 Text Notes 4750 700  0    50   ~ 0
 Debug Connections
 $Comp
-L Connector:Conn_01x05_Male J9
-U 1 1 610AC104
-P 4600 1100
-F 0 "J9" H 4700 800 50  0000 R CNN
-F 1 "Conn_01x05_Male" V 4550 1400 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4600 1100 50  0001 C CNN
-F 3 "~" H 4600 1100 50  0001 C CNN
-F 4 "Header for I2S Debug" H 4600 1100 50  0001 C CNN "Description"
-	1    4600 1100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4350 850  4350 900 
-Wire Wire Line
-	4350 900  4400 900 
-$Comp
 L power:GND #PWR064
 U 1 1 610C1BFA
 P 4350 1350
@@ -1433,9 +1337,9 @@ Wire Wire Line
 	4350 1300 4400 1300
 Text Label 4350 1000 2    50   ~ 0
 I2S_CK
-Text Label 4350 1200 2    50   ~ 0
-I2S_WS
 Text Label 4350 1100 2    50   ~ 0
+I2S_WS
+Text Label 4350 1200 2    50   ~ 0
 I2S_SD
 Wire Wire Line
 	4350 1000 4400 1000
@@ -1450,31 +1354,31 @@ Wire Notes Line
 $Comp
 L Device:R_Small R34
 U 1 1 611833F9
-P 5550 2400
-F 0 "R34" V 5416 2442 50  0000 C CNN
-F 1 "22" V 5480 2470 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 2400 50  0001 C CNN
-F 3 "~" H 5550 2400 50  0001 C CNN
-	1    5550 2400
-	0    1    1    0   
+P 5650 5400
+F 0 "R34" V 5719 5401 50  0000 C CNN
+F 1 "22" V 5580 5398 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5650 5400 50  0001 C CNN
+F 3 "~" H 5650 5400 50  0001 C CNN
+	1    5650 5400
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R35
 U 1 1 6118375F
-P 5550 2500
-F 0 "R35" V 5684 2576 50  0000 C CNN
-F 1 "22" V 5615 2585 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5550 2500 50  0001 C CNN
-F 3 "~" H 5550 2500 50  0001 C CNN
-	1    5550 2500
-	0    1    1    0   
+P 4450 5400
+F 0 "R35" V 4380 5410 50  0000 C CNN
+F 1 "22" V 4515 5405 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4450 5400 50  0001 C CNN
+F 3 "~" H 4450 5400 50  0001 C CNN
+	1    4450 5400
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5350 2400 5450 2400
 Wire Wire Line
-	5700 2400 5650 2400
+	5650 5250 5650 5300
 Wire Wire Line
-	5700 2500 5650 2500
+	4450 5250 4450 5300
 Wire Wire Line
 	5450 2500 5350 2500
 Wire Wire Line
@@ -1582,10 +1486,7 @@ $EndComp
 Wire Wire Line
 	7700 4650 7700 4700
 Wire Wire Line
-	7700 4700 7650 4700
-Wire Wire Line
 	7700 4700 7750 4700
-Connection ~ 7700 4700
 Wire Wire Line
 	9100 5100 9100 5250
 Wire Wire Line
@@ -1688,7 +1589,7 @@ Wire Wire Line
 	6300 5400 6300 5300
 Text Label 6300 5700 3    50   ~ 0
 SOFT_MUTE
-Text Label 1450 4350 2    50   ~ 0
+Text Label 1450 5450 2    50   ~ 0
 SOFT_MUTE
 $Comp
 L power:GND #PWR097
@@ -1828,10 +1729,11 @@ L Power_Protection:USBLC6-2SC6 U9
 U 1 1 60608657
 P 5050 5600
 F 0 "U9" H 5200 6050 50  0000 C CNN
-F 1 "USBLC6-2SC6" H 5400 5950 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 5319 5945 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 4300 6000 50  0001 C CNN
 F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 5250 5950 50  0001 C CNN
 F 4 "USB Micro B ESD protection" H 5050 5600 50  0001 C CNN "Description"
+F 5 "USBLC6-2SC6" H 5050 5600 50  0001 C CNN "Digi-Key_PN"
 	1    5050 5600
 	1    0    0    -1  
 $EndComp
@@ -1906,21 +1808,14 @@ Wire Wire Line
 Connection ~ 5350 2500
 Text Label 5450 2650 3    50   ~ 0
 USB_DP
-Connection ~ 5450 2400
 Wire Wire Line
 	5450 2400 5450 2650
 Text Label 4450 5700 2    50   ~ 0
 USB_DM
 Wire Wire Line
 	4450 5500 4550 5500
-Text Label 4450 5500 2    50   ~ 0
-USB_FS_DM
 Wire Wire Line
 	4450 5700 4550 5700
-Text Label 5650 5500 0    50   ~ 0
-USB_FS_DP
-Text Label 5650 5700 0    50   ~ 0
-USB_DP
 Wire Wire Line
 	5550 5500 5650 5500
 Wire Wire Line
@@ -2002,24 +1897,10 @@ F 1 "8MHz" H 7050 1100 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_Abracon_ABM10-4Pin_2.5x2.0mm" H 7300 1000 50  0001 C CNN
 F 3 "~" H 7300 1000 50  0001 C CNN
 F 4 "HSE crystals" H 7300 1000 50  0001 C CNN "Description"
+F 5 "ASDDV-8.000MHZ-LR-T" H 7300 1000 50  0001 C CNN "Digi-Key_PN"
 	1    7300 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7300 1350 7550 1350
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 6074127E
-P 7400 850
-F 0 "#PWR0101" H 7400 700 50  0001 C CNN
-F 1 "+3.3V" H 7550 900 50  0000 C CNN
-F 2 "" H 7400 850 50  0001 C CNN
-F 3 "" H 7400 850 50  0001 C CNN
-	1    7400 850 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7400 850  7300 850 
 Wire Wire Line
 	7300 850  7300 900 
 $Comp
@@ -2068,7 +1949,6 @@ Wire Wire Line
 	5100 3900 5100 3950
 Wire Wire Line
 	5100 3950 5150 3950
-NoConn ~ 4350 850 
 Wire Wire Line
 	2750 750  2350 750 
 Connection ~ 2350 750 
@@ -2083,8 +1963,6 @@ F 3 "" H 9550 1150 50  0001 C CNN
 	1    9550 1150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10100 1400 10350 1400
 $Comp
 L Device:R_Small R27
 U 1 1 6066F93D
@@ -2217,4 +2095,161 @@ Wire Wire Line
 	3650 7050 3500 7050
 Wire Wire Line
 	3750 7050 3900 7050
+Wire Wire Line
+	7650 4800 7650 4750
+Wire Wire Line
+	7650 4750 7850 4750
+Connection ~ 7850 4750
+Wire Wire Line
+	7850 4750 7850 4800
+Text Label 5650 5700 0    50   ~ 0
+USB_DP
+Wire Wire Line
+	2550 6450 2450 6450
+Wire Wire Line
+	2450 6450 2350 6450
+Connection ~ 2450 6450
+Wire Wire Line
+	2150 6450 2250 6450
+Wire Wire Line
+	2250 6450 2350 6450
+Connection ~ 2250 6450
+Wire Wire Line
+	2650 950  2550 950 
+Connection ~ 2550 950 
+Wire Wire Line
+	2450 950  2350 950 
+Wire Wire Line
+	2550 950  2450 950 
+Connection ~ 2450 950 
+Wire Wire Line
+	2250 950  2350 950 
+Connection ~ 2250 950 
+Wire Wire Line
+	2050 950  2150 950 
+Wire Wire Line
+	2150 950  2250 950 
+Connection ~ 2150 950 
+$Comp
+L MCU_ST_STM32F4:STM32F407VGTx U5
+U 1 1 6045816F
+P 2350 3650
+F 0 "U5" H 1950 1000 50  0000 C CNN
+F 1 "STM32F407VGT6" H 2900 1000 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 1650 1050 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 2350 3650 50  0001 C CNN
+F 4 "F4 processor for DAC/MIDI subsystem" H 2350 3650 50  0001 C CNN "Description"
+F 5 "STM32F407VGT6" H 2350 3650 50  0001 C CNN "Digi-Key_PN"
+	1    2350 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2750 950 
+Wire Wire Line
+	2900 950  2750 950 
+Text Label 2900 950  0    50   ~ 0
+VREF+
+Wire Wire Line
+	7300 1350 7450 1350
+Wire Wire Line
+	7450 850  7450 1350
+Wire Wire Line
+	7300 850  7450 850 
+Connection ~ 7450 1350
+Wire Wire Line
+	7450 1350 7550 1350
+$Comp
+L Device:R_Small R47
+U 1 1 607EE66A
+P 4850 2850
+F 0 "R47" V 4900 2900 50  0000 C CNN
+F 1 "0" V 4800 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4850 2850 50  0001 C CNN
+F 3 "~" H 4850 2850 50  0001 C CNN
+	1    4850 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 2800 4950 2850
+$Comp
+L power:GND #PWR060
+U 1 1 6080951D
+P 4750 2900
+F 0 "#PWR060" H 4750 2650 50  0001 C CNN
+F 1 "GND" H 4755 2727 50  0000 C CNN
+F 2 "" H 4750 2900 50  0001 C CNN
+F 3 "" H 4750 2900 50  0001 C CNN
+	1    4750 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2900 4750 2850
+$Comp
+L Device:R_Small R50
+U 1 1 60853970
+P 10350 1500
+F 0 "R50" H 10382 1547 50  0000 L CNN
+F 1 "47k" H 10374 1454 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10350 1500 50  0001 C CNN
+F 3 "~" H 10350 1500 50  0001 C CNN
+	1    10350 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R53
+U 1 1 60853CE8
+P 10350 1750
+F 0 "R53" H 10374 1798 50  0000 L CNN
+F 1 "97k" H 10372 1707 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10350 1750 50  0001 C CNN
+F 3 "~" H 10350 1750 50  0001 C CNN
+	1    10350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 1400 10350 1400
+Wire Wire Line
+	10250 1900 10300 1900
+Wire Wire Line
+	10300 1900 10300 1650
+Wire Wire Line
+	10300 1650 10350 1650
+Wire Wire Line
+	10350 1650 10350 1600
+Connection ~ 10350 1650
+$Comp
+L power:GND #PWR063
+U 1 1 6090ACEF
+P 10350 1900
+F 0 "#PWR063" H 10350 1650 50  0001 C CNN
+F 1 "GND" H 10426 1896 50  0000 C CNN
+F 2 "" H 10350 1900 50  0001 C CNN
+F 3 "" H 10350 1900 50  0001 C CNN
+	1    10350 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1900 10350 1850
+$Comp
+L Connector:Conn_01x04_Male J9
+U 1 1 6095CF7B
+P 4550 1200
+F 0 "J9" H 4522 1082 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 5050 850 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4550 1200 50  0001 C CNN
+F 3 "~" H 4550 1200 50  0001 C CNN
+	1    4550 1200
+	-1   0    0    1   
+$EndComp
+Connection ~ 4350 1300
+$Comp
+L Connector:Conn_01x03_Male J13
+U 1 1 609B567B
+P 6350 1200
+F 0 "J13" H 6322 1132 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 6950 950 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6350 1200 50  0001 C CNN
+F 3 "~" H 6350 1200 50  0001 C CNN
+	1    6350 1200
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
