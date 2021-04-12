@@ -1433,7 +1433,7 @@ U 1 1 607A450C
 P 6900 1200
 F 0 "J3" H 6950 1617 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 6950 1526 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 6900 1200 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 6900 1200 50  0001 C CNN
 F 3 "~" H 6900 1200 50  0001 C CNN
 	1    6900 1200
 	1    0    0    -1  

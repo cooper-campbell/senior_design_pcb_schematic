@@ -1737,17 +1737,6 @@ F 5 "USBLC6-2SC6" H 5050 5600 50  0001 C CNN "Digi-Key_PN"
 	1    5050 5600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR057
-U 1 1 606180F0
-P 5050 5050
-F 0 "#PWR057" H 5050 4900 50  0001 C CNN
-F 1 "+5V" H 5065 5223 50  0000 C CNN
-F 2 "" H 5050 5050 50  0001 C CNN
-F 3 "" H 5050 5050 50  0001 C CNN
-	1    5050 5050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5050 5050 5050 5100
 $Comp
@@ -1773,17 +1762,6 @@ F 2 "Capacitor_SMD:C_0805_2012Metric" H 5550 6100 50  0001 C CNN
 F 3 "~" H 5550 6100 50  0001 C CNN
 F 4 "5.2 V" H 5550 6100 50  0001 C CNN "Min Voltage Rating"
 	1    5550 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR099
-U 1 1 6065220C
-P 5550 5950
-F 0 "#PWR099" H 5550 5800 50  0001 C CNN
-F 1 "+5V" H 5565 6123 50  0000 C CNN
-F 2 "" H 5550 5950 50  0001 C CNN
-F 3 "" H 5550 5950 50  0001 C CNN
-	1    5550 5950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2003,7 +1981,7 @@ U 1 1 606C82F0
 P 5350 4150
 F 0 "J11" H 5400 4567 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 5700 4500 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 5350 4150 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 5350 4150 50  0001 C CNN
 F 3 "~" H 5350 4150 50  0001 C CNN
 	1    5350 4150
 	1    0    0    -1  
@@ -2252,4 +2230,8 @@ F 3 "~" H 6350 1200 50  0001 C CNN
 	1    6350 1200
 	-1   0    0    1   
 $EndComp
+Text Label 5050 5050 0    50   ~ 0
+USB_POWER
+Text Label 5550 5950 0    50   ~ 0
+USB_POWER
 $EndSCHEMATC
